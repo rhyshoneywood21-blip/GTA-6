@@ -8,8 +8,9 @@ Goal: one phone-friendly companion for two Xbox Series S story-mode players. "10
 | Community sightings | Open | Source link/proof, platform, no fabricated records; private journal already exists, shared feed not yet implemented |
 | Map | Partial | Test existing embed on phone, zoom/filter/search; validate sample pins against game screenshots; independent map progress not yet synced |
 | Money / guides | Partial | Sources, unlock prerequisites, gross versus net, no guarantee of repeatability |
-| Glitches | Open | Separate post-patch firsthand reports from old reports; record Xbox build and reproduction; no universal guarantee |
-| Completion | Partial | 35 requirements tracked; individual collectible pins still external |
+| Glitches | Source-based inclusion | Include documented and reported methods with steps, source/date, patch uncertainty and save-risk notes. Local console reproduction optional; not a release blocker. |
+| Weapons | Location-focused | Free and hidden pickups, unique finds and useful unlocks; no full catalogue, stats or shop prices required. |
+| Completion | Partial | 35 requirements tracked; source-based collectible pins imported, individual rewards and coverage to expand |
 | Accessibility | Partial | Test navigation, text size, touch targets, contrast and player profile isolation on Android |
 | App quality | Open | Run browser tests for search, all routes, persistence, backups, map failures and offline behavior |
 | APK | Open | Package and test on actual devices; no signing keys in public repository |
@@ -23,10 +24,9 @@ Goal: one phone-friendly companion for two Xbox Series S story-mode players. "10
 - FullSweep: https://fullsweepmap.com/developers/ and https://www.fullsweepmap.com/ — public API, but homepage reports 75 pre-release predicted pins and 1317 community landmarks; not a confirmed in-game spawn dataset. Never treat the entire feed as verified. Pixel coordinates are specific to its basemap.
 - Vice City API: https://vice-city.app/developers — API and upstream credits; review keys, usage restrictions and map rights before import.
 ## Practical order
-1. Obtain reusable data and inspect actual payloads; no fictional records.
-2. Import into a source-aware vehicle/location schema and cross-check samples; display coverage counts and unknown fields.
-3. Build integrated category filters and per-player progress against stable IDs; retain external map fallback.
-4. Expand guides and patch evidence; reconcile duplicates.
-5. Run browser/mobile tests, then package APK. Keep existing ten sections and exclude teddy-bear warehouse exploit.
+1. Finish non-vehicle research: pickup locations, money, reported glitches, tips, codes, collectibles, maps, Randy/RydeMe.
+2. Then complete vehicle data and location coverage; preserve source and uncertainty.
+3. Only afterward consolidate the content into the existing ten app sections, test functionality and package APK.
+No story mission walkthroughs, exhaustive weapon statistics or teddy-bear warehouse exploit. Console testing of reported gameplay methods is optional; app functionality testing remains a release requirement.
 ## Known limits
 No access to installed apps, no confirmed complete community spawn database, no console exploit test and no phone runtime test. Some source pages inaccessible. Data is changing; release claims must state version and coverage. No background work is running.
