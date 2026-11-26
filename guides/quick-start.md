@@ -6,8 +6,8 @@ Official: https://support.rockstargames.com/articles/5g5CmDTne3WcpK7nsWsMR8/gran
 ## What to do at your current chapter
 - 1: progress story, unlock transport; sell available loot to Donnie rather than Brian when appropriate. Keep separate manual saves.
 - 2: unlock Moses; consider using his one-time free registration on a useful vehicle rather than a disposable car. Collect the three Port Gellhorn safe rewards. Start stat quests.
-- 3: complete Clonin' Keys, Makin' Gs; open Randy list in map. Hunt Bayside dealership, Southside showrooms, rich driveways. Use partner delivery on one car before repeating. Sell goods to Tyrone/Yasmani.
-- 4: Photo/Shoot and Dale Mamba for advanced-tracker registration; complete bank-vault unlock mission. Prioritize large vaults over low-value shops when available.
+- 3: unlock small banks after Credit Check; complete Clonin' Keys, Makin' Gs; open Randy list in map. Hunt Bayside dealership, Southside showrooms, rich driveways. Use partner delivery on one car before repeating. Sell goods to Tyrone/Yasmani.
+- 4: Photo/Shoot and Dale Mamba for advanced-tracker registration; complete large bank-vault unlock mission. Prioritize large vaults over low-value shops when available.
 - Post-story: complete outstanding map objectives and collectibles. Cheats disable saving/achievements for the session, so not a permanent money strategy.
 ## 30-minute Chapter 3 route
 1. Manual save. Check outstanding Randy targets.
