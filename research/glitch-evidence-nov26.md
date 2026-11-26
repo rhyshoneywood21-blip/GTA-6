@@ -1,5 +1,7 @@
 # Current non-vehicle glitch evidence — November 26, 2026
 Latest identified Xbox build 1.0.2.2 (23 Nov); no newer patch found in this check. https://rockstarintel.com/new-gta-vi-update-01-002-002-patch-notes-released/
+## Inclusion policy (revised)
+Include actionable source-backed reports even without local console testing, including old or conflicting reports with useful steps. Clearly distinguish documented mechanics, reported after patch, older reports and known patched methods. Unknown build or failure on one save is not an automatic exclusion. Never claim guaranteed success. For risky resets, use a separate manual save. Local reproduction is optional, not a release gate. No teddy-bear warehouse method.
 ## Illegal Operation death reset
 Status: reported after patch, not locally reproduced. November 24 creator demonstrations and November 25 tracker update. Readable installed build not established.
 In GTA VI: make a separate save, use an available gang operation other than the excluded warehouse method, clear it, assign partner to fence the loot, wait for sale confirmation, let the active character die at the site, then check whether the operation and sale proceeds remain on respawn. Record net cash, lost items and repeatability. Do not overwrite only safe save. Ordinary operation respawns may not restore one-off valuables.
