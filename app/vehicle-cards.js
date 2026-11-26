@@ -1,0 +1,40 @@
+/* Individual vehicle cards, source-linked facts and original screenshot links. */
+(function(){
+"use strict";
+const host=document.getElementById("vehicle-cards"),data=window.LEONIDA_MAP,seed=window.LEONIDA_VEHICLE_SPECS;
+if(!host||!data||!seed)return;
+const el=(tag,t)=>{const n=document.createElement(tag);if(t!=null)n.textContent=t;return n;},btn=(t,f)=>{const n=el("button",t);n.type="button";n.onclick=f;return n;},link=(t,u)=>{const n=el("a",t);if(/^https:\/\//i.test(u))n.href=u;n.target="_blank";n.rel="noopener noreferrer";return n;};
+const canonical=s=>s.normalize("NFKC").toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g," ").trim();
+const rows=new Map();
+function ensure(name){const k=canonical(name);if(!rows.has(k))rows.set(k,{name,markers:[],hints:[],spec:null});return rows.get(k);}
+for(const r of data.rows.filter(x=>x[2]==="vehicle"))ensure(r[1]).markers.push(r);
+for(const e of groups[0].items){const [name,...hint]=e.label.split(" — ");ensure(name).hints.push({group:e.section,text:hint.join(" — ")});}
+for(const s of seed.rows)ensure(s.name).spec=s;
+function catalogueMerge(){const set=window.LeonidaCatalog?.sets?.vehicles;if(!set||!Array.isArray(set.rows))return;for(const x of set.rows){if(typeof x.name!=="string")continue;const v=ensure(x.name);v.catalog=x;}}
+const q=el("input");q.type="search";q.placeholder="Find a vehicle, class or area";q.setAttribute("aria-label","Search vehicle cards");q.style.width="100%";
+const filter=el("select");filter.setAttribute("aria-label","Filter vehicle cards");for(const [label,value] of [["All vehicles",""],["Known cargo capacity","storage"],["Known seats","seats"],["Randy references","randy"],["Mapped vehicles","map"],["Favorites","favorites"],["Standout markers","standout"]])filter.add(new Option(label,value));
+const sort=el("select");sort.setAttribute("aria-label","Sort vehicle cards");for(const [label,value] of [["Name A–Z","name"],["Most cargo slots","cargo"],["Most seats","seats"],["Highest known speed rating","speed"]])sort.add(new Option(label,value));
+const count=el("p"),list=el("div"),details=el("div");details.hidden=true;let limit=30;
+function favorite(v){return extras[player].favorites.includes(v.name);}
+function changeFav(v){const f=extras[player].favorites,i=f.indexOf(v.name);if(i<0)f.push(v.name);else f.splice(i,1);storeExtra();}
+function field(label,value){const box=el("div");box.className="vehicle-field";box.append(el("small",label),el("strong",value==null||value===""?"Unknown":String(value)));return box;}
+function money(x){return Number.isFinite(x)?"$"+x.toLocaleString():null;}
+function specValue(v,k){return v.spec?.[k]??null;}
+function renderDetail(v){details.hidden=false;details.replaceChildren();const s=v.spec||{},header=el("div");header.className="vehicle-hero";header.append(el("small","VEHICLE PROFILE"),el("h2",v.name),el("p",s.class||v.catalog?.class||v.catalog?.type||"Class not verified"));details.append(header);
+const photo=v.markers.find(r=>seed.photos[r[0]]);if(photo){details.append(link("View original in-game screenshot",seed.photos[photo[0]]),el("p","Photo hosted by Open GTA 6 Map; game imagery belongs to its owners."));}else if(s.sources?.length){details.append(link("Open vehicle reference / available photos",s.sources[0]));}else details.append(el("p","No matched photo source yet."));
+const facts=el("div");facts.className="vehicle-facts";facts.append(field("Seats",s.seatsNote||s.seats),field("Cargo slots",s.storage),field("Vehicle class",s.class||v.catalog?.class||v.catalog?.type),field("Registration cost",money(s.register)),field("Sale value",money(s.sell)),field("Registerable",s.registerable),field("Tracker",s.tracker),field("Access",s.access));details.append(facts);
+if(s.stats){const ratings=el("div");ratings.className="vehicle-facts";for(const [key,label] of [["speed","Speed / 10"],["acceleration","Acceleration / 10"],["asphalt","Road handling / 10"],["offroad","Off-road / 10"],["strength","Strength / 10"]])ratings.append(field(label,s.stats[key]));details.append(el("h3","Reported scan ratings"),ratings);}
+if(s.note)details.append(el("p",s.note));details.append(el("p",s.sources?.length?"Source-reported values; not personally tested. Unknown fields have not been guessed.":"Specifications not yet sourced for this exact name or variant."));
+const fav=btn(favorite(v)?"★ Favorited":"☆ Favorite",()=>{changeFav(v);renderDetail(v);draw();});details.append(fav,btn("Record my sighting",()=>{document.getElementById("carname").value=v.name;document.getElementById("spawnform").scrollIntoView({block:"start"});}));
+if(v.hints.length){details.append(el("h3","Randy location leads"));for(const h of v.hints)details.append(el("p",h.group+" · "+h.text));}
+details.append(el("h3",v.markers.length+" mapped records"));
+for(const r of v.markers){const c=el("div");c.className="carcard";c.append(el("p",[r[6],r[5],r[7]].filter(Boolean).join(" · ")));if(r[8])c.append(el("p",r[8]));c.append(btn("Show exact pin",()=>window.LeonidaMap.openId(r[0])),link("Original map pin","https://fbritoferreira.github.io/gta6/?id="+encodeURIComponent(r[0])));if(seed.photos[r[0]])c.append(document.createTextNode(" · "),link("Original screenshot",seed.photos[r[0]]));details.append(c);}
+if(!v.markers.length)details.append(btn("Search map by exact name",()=>window.LeonidaMap.open(v.name,"vehicle")));
+const sources=el("div");for(const u of s.sources||[])sources.append(el("p"),link("Specification source",u));if(s.sources?.length)details.append(el("h3","Sources"),sources);
+details.append(btn("Close profile",()=>{details.hidden=true;count.scrollIntoView({block:"nearest"});}));details.scrollIntoView({block:"start"});}
+function draw(){catalogueMerge();const term=q.value.toLowerCase().trim(),kind=filter.value;let items=[...rows.values()].filter(v=>{const hay=[v.name,v.spec?.class,v.catalog?.class,v.catalog?.type,...v.hints.map(h=>h.text),...v.markers.map(r=>r[5]+" "+r[6])].join(" ").toLowerCase();if(!term.split(/\s+/).every(t=>hay.includes(t)))return false;if(kind==="storage")return Number.isFinite(specValue(v,"storage"));if(kind==="seats")return Number.isFinite(specValue(v,"seats"));if(kind==="randy")return v.hints.length>0;if(kind==="map")return v.markers.length>0;if(kind==="favorites")return favorite(v);if(kind==="standout")return v.markers.some(r=>r[6]==="Standout vehicle");return true;});
+const score=v=>sort.value==="cargo"?specValue(v,"storage"):sort.value==="seats"?specValue(v,"seats"):v.spec?.stats?.speed;items.sort((a,b)=>sort.value==="name"?a.name.localeCompare(b.name):((score(b)??-1)-(score(a)??-1)||a.name.localeCompare(b.name)));
+count.textContent=items.length+" matching named records · "+rows.size+" total names (base models, variants and map labels; not the official model count).";list.replaceChildren();for(const v of items.slice(0,limit)){const card=el("article");card.className="carcard vehicle-card";const s=v.spec||{};card.append(el("small",s.class||v.catalog?.class||v.catalog?.type||"Class unknown"),el("h3",v.name));const f=el("div");f.className="vehicle-facts";f.append(field("Seats",s.seatsNote||s.seats),field("Cargo slots",s.storage));card.append(f,el("p",v.markers.length+" map records"+(v.hints.length?" · Randy reference":"")),btn("Open vehicle card",()=>renderDetail(v)));if(v.markers.some(r=>seed.photos[r[0]]))card.append(document.createTextNode(" "),link("Photo",seed.photos[v.markers.find(r=>seed.photos[r[0]])[0]]));list.append(card);}if(items.length>limit)list.append(btn("Show 30 more",()=>{limit+=30;draw();}));}
+q.oninput=filter.onchange=sort.onchange=()=>{limit=30;details.hidden=true;draw();};
+host.append(el("h2","Vehicle cards"),el("p","Search by vehicle or area, compare known seats and cargo capacity, open exact map pins and original photo references. Missing facts are marked unknown."),q,filter,sort,count,details,list);window.LeonidaVehicleCards={refresh:()=>{details.hidden=true;draw();},size:()=>rows.size};draw();
+})();
