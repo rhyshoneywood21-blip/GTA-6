@@ -5,6 +5,8 @@ Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2
 This is a spoiler-light, living research reference for two players who want easier gameplay, high payouts, fast travel and collectibles. The repository is public: do not add personal account details or private screenshots.
 
 ## Start here
+- [Android APK and independent map roadmap](app/ROADMAP.md)
+- [Map and vehicle data source research](research/map-data-sources.md)
 - **[Expanded Randy vehicle checklist (16 core + later/disputed)](guides/randy-full-checklist.md)**
 - [All 22 bank targets](guides/bank-checklist.md) · [CSV](data/banks.csv)
 - [All 39 gang operations](guides/operations-checklist.md)
