@@ -4,9 +4,18 @@ Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2
 
 This is a spoiler-light, living research reference for two players who want easier gameplay, high payouts, fast travel and collectibles. The repository is public: do not add personal account details or private screenshots.
 
-## Start here
+## Current priority — complete research before app release
+No full story mission walkthroughs. Keep only relevant unlock requirements. APK/UI development paused; existing portable version is an earlier prototype.
+- [Data-first research report](research/data-first-pass.md)
+- [Vehicle master research index](data/vehicles-master.json) — 757 exact-name candidate labels, not a verified unique model count.
+- [Vehicle catalogue source facts](data/vehicle-catalogue.json) — 381 entries; 224 reported seat values.
+- [Safes and reported codes](data/safes-map.json)
+- [Weapon pickup locations](data/weapon-pickups.json)
+- [Robbery pins](data/crime-pins.json) · [Collectible pins](data/collectibles-pins.json) · [Activity pins](data/activities-pins.json)
+
+## Existing prototype and guides
 - **[Portable Leonida Companion](Leonida-Companion.html)** — [download raw HTML](https://raw.githubusercontent.com/rhyshoneywood21-blip/GTA-6/main/Leonida-Companion.html). Includes 6,642 source-based map records, vehicle cards and 23 guides. Not phone-tested.
-- **[Android build workflow](https://github.com/rhyshoneywood21-blip/GTA-6/actions)** — APK build configuration committed; actual successful build not yet verified.
+- **[Android build workflow](https://github.com/rhyshoneywood21-blip/GTA-6/actions)** — manual-only during research; actual successful build not yet verified.
 - [Ultimate pass release and quality report](research/ultimate-pass-release.md)
 - [Quick lookup library: missions, codes, maps, races and equipment](guides/reference-library.md)
 - [Expanded robbery and money guide](guides/robbery-expansion.md)
