@@ -29,3 +29,6 @@ Only hunt these last three if your game explicitly requires them. Do not count a
 ## RydeMe timing correction
 Two Nov 25 guides specify ordering RydeMe **before** seating the partner in the target car. This is a sensible first attempt if waiting for a pickup risks tracker activation: choose Randy, secure the target, Wait In, board taxi, Follow Me, LT + displayed Skip Journey prompt ($100), wait for partner, complete delivery. No guaranteed bypass if vehicle cannot start or leave driveway. Current wanted level compatibility unknown. This method is not console-confirmed.
 Sources: https://www.powerpyx.com/gta-6-randys-wish-list-car-locations-walkthrough/ ; https://www.radiotimes.com/technology/gaming/gta-6-randys-wishlist-cars/ ; https://gtatown.com/garage/randy-wish-list ; https://gta6.house/guides/gta-6-fast-travel-stolen-cars-rydeme ; https://cutscenewire.com/games/gta-6/vehicles/how-to-fast-travel-with-stolen-cars-without-damage-in-gta-6/
+
+Additional reference: https://www.ign.com/wikis/gta-6/Randy%27s_Wish_List_-_All_Randy%27s_Car_Locations
+IGN video index: https://open.video/%40ign/v/gta-6-all-randys-car-locations-complete-randys-wish-list-guide — some cars require intel and may move within areas. Written page unavailable during review. Existing 22 saved rows remain in the same order.

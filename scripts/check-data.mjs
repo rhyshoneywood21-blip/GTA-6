@@ -6,7 +6,7 @@ import {createHash} from "node:crypto";
 const read=p=>readFile(new URL("../"+p,import.meta.url),"utf8");
 const h=await read("index.html"),ctx=vm.createContext({window:{}});
 const scripts=[...h.matchAll(/<script src="([^"]+)"><\/script>/g)].map(m=>m[1]);
-for(const p of scripts){const s=await read(p);new vm.Script(s,{filename:p});if(/guide-data|map-data|vehicle-data-final|playbooks|quick-content|topic-content/.test(p))vm.runInContext(s,ctx);}
+for(const p of scripts){const s=await read(p);new vm.Script(s,{filename:p});if(/guide-data|map-data|vehicle-data-final|playbooks|quick-content|topic-content|randy-locations/.test(p))vm.runInContext(s,ctx);}
 for(const m of h.matchAll(/<script>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);
 const ids=[...h.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,"duplicate HTML IDs");
 const refs=[...h.matchAll(/\$\("([^"]+)"\)/g)].map(m=>m[1]);for(const id of refs)assert(ids.includes(id),"missing DOM id "+id);
@@ -31,3 +31,5 @@ const playbooks=ctx.window.ULTIMATE_PLAYBOOKS;assert.equal(Object.keys(playbooks
 for(const group of Object.values(ctx.window.ULTIMATE_TASKS))for(const card of group.cards){const p=ctx.window.ULTIMATE_TASK_PLAYBOOKS[card[0]];assert(p?.[3]?.length>=3,"Missing specific task guide "+card[0]);assert(p[3].every(s=>s.length<=180),"Long task step "+card[0]);}
 
 const topics=ctx.window.ULTIMATE_TOPICS;assert.equal(Object.keys(topics).length,35);for(const id of Object.keys(playbooks)){assert(topics[id]?.length,"Missing edited deeper topics "+id);for(const t of topics[id]){assert(t[2].every(s=>s.length<=200),"Long topic sentence "+id);for(const name of t[4]||[])assert(ctx.window.ULTIMATE_TASK_PLAYBOOKS[name],name);}}
+
+assert.equal(ctx.window.ULTIMATE_RANDY_LOCATIONS.length,22);for(const r of ctx.window.ULTIMATE_RANDY_LOCATIONS)for(const id of [...r[2],...r[3],...r[4]])assert(pinIds.has(id),"Unknown Randy marker "+id);
