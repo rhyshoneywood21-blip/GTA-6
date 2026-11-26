@@ -1,0 +1,8 @@
+dist/
+android/.gradle/
+android/local.properties
+android/**/build/
+node_modules/
+data/catalog-snapshot.json
+data/catalog-import-report.json
+*.apk
