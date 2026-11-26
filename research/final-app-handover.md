@@ -1,0 +1,31 @@
+# Final app handover and pre-build freeze — 26 November 2026
+
+This is the continuation record for the GTA6 project after the long Patch Research Update conversation. It supersedes earlier *scope and release-gate* decisions where they differ, not the underlying research or source records. Repository is public; do not put personal details, accounts or signing secrets here.
+
+## User-approved scope
+- Unofficial GTA VI story-mode companion for two Xbox Series S players, Android target. Independent local profiles, progress, favorites, ownership and sightings; cross-phone synchronization is not implemented or promised.
+- Preserve the existing ten content sections plus home: Map, Vehicles, Money, Glitches, Weapons (pickup locations only), Randy, Gameplay, Progress, Codes, Routes.
+- Keep searchable interactive map, category/evidence filters, hide-found, source links, backup/restore, accessibility and Xbox controls. Map uses matching provider coordinates and remote tiles; don't invent coordinates or equate marker totals with unique completion targets.
+- Include money methods, banks, fences, operations, hidden discoveries, secret equipment, upgrades, collectibles/rewards, safe/keypad codes, useful tricks, Randy/RydeMe and relevant unlock requirements. No 91-story-mission walkthrough catalogue. No weapon catalogue, weapon stats or shop-price catalogue. No teddy-bear warehouse farming method.
+- Include documented and reported glitches even without local console reproduction, with source/date/build uncertainty and save-risk warnings. Never label an untested report as verified.
+- Every canonical vehicle gets an individual card, including variants. Names, categories, acquisition, locations, stats, picture/reference links where available, favorites and ownership. Seats and cargo optional, not a launch gate; unknown fields hidden or clearly unavailable. Do not guess or transfer specs between variants.
+- No external API key required. No new user downloads needed. App name/logo/visual branding not selected: Leonida Companion is only working title. User wants a catchy original GTA VI-themed identity and icon at the later branding stage, not now.
+- Finish preparation and agree final scope before consuming limited app-build allowance. No build or redesign in this handover commit.
+
+## Authoritative data and retained research
+- data/vehicles-unified-v2.json: canonical 560 unique slugs including 281 Standout entries; 442 full performance panels, 400 seating reports (395 resolved), 16 cargo, 324 location leads, 337 attached map pins, 195 photo references, 560 vehicle source links, 14 registration, 13 sale, 66 Timesaver acquisition and 28 Timesaver spawn entries. All 139 Timesaver records retained, 138 matched across 137 canonical rows, one potential taxi alias unresolved. Five explicit alias mappings are provisional. No claim of full official roster or downloadable image files.
+- Keep data/vehicles-unified.json, data/gtatown-vehicles-2026-11-26.json, data/vehicles-master.json (757 candidate labels), data/vehicle-unmatched-review.json and all prior guides/data. Do not replace the canonical set with the candidate union. Existing vehicle card UI still uses old seed data; V2 not integrated yet.
+- Existing app map: 6,642 source records, 44 categories, 449 vehicle markers (10 spawn, 16 request, 423 standout); 128 weapon pickups, 121 safes, 592 card markers. 3,026 IDs in the five nonvehicle subsets. Provider counts differ from unique game targets; no in-game position verification claimed.
+- Existing prototype: 118 checklist items, 23 bundled guides, two local profiles; previous portable HTML and source remain intact. See research/non-vehicle-consolidated.md, research/ultimate-pass-release.md, research/vehicle-export-merge.md, research/release-readiness.md, README.md. Preserve source attribution and licensing, link photos where reuse permission is unconfirmed. No claim of exhaustive all-secrets/codes/spawns coverage.
+
+## Pre-build checklist (still open)
+1. Integrate canonical V2 vehicle data and map references into card search/details, class/variant filters, source links, optional stats and per-profile favorite/owned state. Handle aliases without doubling records. Preserve unmatched review data separately.
+2. Consolidate newest research guides into app bundles/navigation/search, replacing stale copies of updated guides. At minimum inspect secret-discoveries, free-pickups-expanded, side-income-expanded, money-methods-master, safe-code-expanded, code-puzzles, collectible-rewards, collectibles-and-cheat-rewards, hidden-mechanics-expanded, research/reported-glitch-additions and research/glitch-evidence-nov26. Existing PAGES points to old 23-guide bundle; latest Markdown files are not automatically imported. Exclude full weapon stats/catalogue from final UI.
+3. Audit content against locked scope, confirm all guide references and attribution, use source-based unknown states, remove obsolete prototype claims. Keep offline core usable; online tiles/photos/links may fail and need fallback.
+4. Agree name/icon and final UI design later. Prepare branding assets only when requested; unofficial identity, not Rockstar official logo. No branding generation yet.
+5. Test mobile browser navigation, all guide routes, map/pin filtering, vehicle cards, search, separate profiles, favorites/ownership, backup round-trip, persistence, offline/network failures, responsive layout, readable touch targets. Data static checks alone do not establish runtime correctness.
+6. GitHub Actions manual workflow .github/workflows/build.yml exists. Latest visible run #13 (45864829668, 26 Nov) passed static data/build asset step, failed at Install browser test dependencies, skipped browser tests and Android packaging. Diagnose exact dependency failure before final build. No verified APK or phone install. Do not trigger workflow until approved.
+7. Package once ready, verify actual successful artifact, then install and test on both devices. Keep public repo free of private progress and secrets. No hosted/shared sync assumed.
+
+## Current state
+Research sufficient for V1, incomplete source fields accepted. App integration, branding, runtime tests and APK remain pending. No background work. This file is the continuity checkpoint; read it and the current GitHub tree first if moving to a new chat.
