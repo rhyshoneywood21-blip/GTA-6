@@ -27,3 +27,11 @@ https://www.reddit.com/r/xbox/comments/1y5affs/gta6_gameplay_tips_i_wish_i_knew_
 https://www.reddit.com/r/GTA6/comments/1y4rvht/some_quick_tips_for_the_game/
 https://www.gamesradar.com/games/grand-theft-auto/gta-6-update-gives-players-losing-progress-to-crashes-a-lifeline-and-it-looks-like-the-first-person-and-60fps-glitches-are-safe-for-now/
 https://www.reddit.com/r/gtaglitches/comments/1y4gvl1/gta_6_working_glitches_thread/
+
+## Additional practical tricks (Nov 26)
+- GPS voice and turn tones: enable through navigation options to reduce the need to look at minimap.
+- Hold Y when entering with partner to access rear seat where available.
+- In-game enemy tagging and bottle distraction: see XboxAchievements guide for contextual inputs; whistle reported LT then Y. Do not confuse with normal interact prompts.
+- Headphones allow listening to radio on foot (reported).
+- Early cash storage: bedroom floorboard; after Chapter 1 check Jason's Rainy Day Funds metal box at old Key Lento safehouse. Dolphin mailbox can reportedly drop items when kicked. Floating debris in Watson Bay can mark submerged loot; use scuba if available. One-off finds, no respawn guarantee.
+Sources: https://www.pcgamer.com/games/grand-theft-auto/15-hidden-gta-6-controls-and-features-you-should-know-about/ ; https://www.pushsquare.com/guides/gta-6-secret-controls-the-game-doesnt-tell-you ; https://www.xboxachievements.com/game/grand-theft-auto-6/guide/gta-6-heres-11-cool-hidden-tips-and-tricks-the-game-doesnt-tell-you-about ; https://www.gtabase.com/gta-6/map/?feature=hidden-packages
