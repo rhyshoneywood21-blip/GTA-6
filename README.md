@@ -1,0 +1,35 @@
+# GTA VI | Xbox Series S gameplay handbook
+
+Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2 (23 November)**. Story mode only.
+
+This is a spoiler-light, living research reference for two players who want easier gameplay, high payouts, fast travel and collectibles. The repository is public: do not add personal account details or private screenshots.
+
+## Start here
+- [Randy's Wish List and RydeMe](guides/randy-rydeme.md)
+- [Money, banks and fencing](guides/money.md)
+- [Accessibility, controls and character upgrades](guides/gameplay.md)
+- [Exploit evidence and testing log](research/exploits.md)
+- [Free equipment, vehicles and exploration](guides/discoveries.md)
+
+## Evidence rules
+- **Documented:** official documentation or established walkthroughs; not necessarily tested on Series S.
+- **Reported after patch:** dated community evidence after Nov 23, but upload date alone does not establish installed build.
+- **Unverified:** insufficient evidence, conflicting reports or no direct reproduction.
+- **Locally tested:** only after a player records platform, build, steps and outcome. No local tests recorded yet.
+
+Save in a separate slot before testing exploits. Never assume a video proves an exploit works on your save. Check map markers and button prompts in-game. AI-generated maps are illustrative, not navigational references. No warehouse farming method is included.
+
+## Patch monitoring
+- [Rockstar support](https://support.rockstargames.com/)
+- [Pure Xbox November 23 patch report](https://www.purexbox.com/news/2026/11/gta-6-update-now-live-on-xbox-series-xs-includes-seven-official-fixes)
+- [Glitch tracker](https://www.vicevaulted.com/tracker) (community aggregator; not proof)
+
+## Quick priorities
+1. Enable accessibility options for the player who needs them.
+2. Finish the Chapter 3 key-cloner unlock and use the in-game Wish List as the authority.
+3. Test partner delivery on one car before grinding.
+4. Fence narcotics with Tyrone and jewelry/marked bills with Yasmani once unlocked.
+5. Unlock the bank vault activity in Chapter 4 for repeatable legitimate in-game payouts.
+6. Collect permanent stat improvements and free equipment.
+
+Research is versioned here; GitHub does not increase ChatGPT's runtime or cause autonomous research between turns.
