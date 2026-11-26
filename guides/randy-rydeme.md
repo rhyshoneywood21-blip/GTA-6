@@ -3,9 +3,9 @@
 Chapter 3, Clonin' Keys, Makin' Gs. Map > Robberies > Randy's Wish List. The introductory Zorrusso counts in some guides. The in-game list is authoritative; published lists disagree (16–22 including later targets/finale). Do not treat the previous 17-car poster as exhaustive.
 ## Partner delivery candidate (not locally verified)
 1. Save separately; meet your partner.
-2. Scan a wanted car and clone its key. Both characters enter.
+2. Scan a wanted car, order RydeMe to Randy first (Nov 25 guide sequence), then clone its key and have both characters enter.
 3. Select Wait In Car in the partner menu (hold D-pad Right; follow actual UI).
-4. Exit, order RydeMe to Randy's garage in Balsero. Walk to a public road if pickup fails.
+4. Exit and meet the already-requested RydeMe. Walk to a reachable road if pickup fails.
 5. Enter RydeMe, select Follow Me for partner, skip trip using the displayed prompt (reported LT/Y, $100).
 6. Wait for the partner to arrive; deliver the target vehicle. Check condition and payment.
 If the partner cannot exit a driveway, the car cannot start, or the tracker activates, abandon the experiment or deliver normally. Do not assume a locked garage or blocked gate can be bypassed. Post-patch success not independently established here.
@@ -45,3 +45,5 @@ Peacock Estates: take RydeMe to gate, walk along residential streets, scan drive
 - Advanced-tracker registration: finish Randy's required deliveries, progress Chapter 4 through Photo/Shoot and complete Dale Mamba (Mamba GT). Earlier 5–7-car claims are not reliable. https://www.vice.com/en/article/gta-6-advanced-tracker-removal/ ; https://www.powerpyx.com/gta-6-how-to-register-advanced-tracker-cars/
 - Delivery Day finale pays a reported $25,000 and unlocks Supply & Demand. https://www.powerpyx.com/gta-6-delivery-day-meet-randy-walkthrough/
 - If taxi stops working, save then fully quit and reopen (reported Xbox workaround). If Randy's payout or marker fails, retain a save from before delivery.
+
+See [expanded checklist and correction](randy-full-checklist.md) for 16 initial cars, later objectives and disputed board entries.
