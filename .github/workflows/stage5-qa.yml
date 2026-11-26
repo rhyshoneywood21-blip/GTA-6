@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/stage5-qa.yml'
       - 'scripts/browser-test.mjs'
+      - 'app/live-map.js'
+      - 'index.html'
 permissions:
   contents: read
 jobs:
