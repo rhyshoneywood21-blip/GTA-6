@@ -2,6 +2,7 @@ import "./prepare-final-guides.mjs";
 import assert from "node:assert/strict";
 import {readFile} from "node:fs/promises";
 import vm from "node:vm";
+import {createHash} from "node:crypto";
 const read=p=>readFile(new URL("../"+p,import.meta.url),"utf8");
 const h=await read("index.html"),ctx=vm.createContext({window:{}});
 const scripts=[...h.matchAll(/<script src="([^"]+)"><\/script>/g)].map(m=>m[1]);
@@ -15,3 +16,10 @@ for(const r of d.rows){assert(typeof r[0]==="string"&&r[0]&&typeof r[1]==="strin
 const cars=d.rows.filter(r=>r[2]==="vehicle");assert.equal(cars.length,449);assert.equal(cars.filter(r=>r[6]==="Vehicle spawn").length,10);assert.equal(cars.filter(r=>r[6]==="Vehicle request").length,16);assert.equal(cars.filter(r=>r[6]==="Standout vehicle").length,423);
 const vehicles=ctx.window.LEONIDA_VEHICLES;assert.equal(vehicles.rows.length,560);assert.equal(new Set(vehicles.rows.map(r=>r.slug)).size,560);const pinIds=new Set(d.rows.map(r=>r[0]));for(const r of vehicles.rows){assert(r.name&&r.reference);for(const pin of r.pins)assert(pinIds.has(pin.id),pin.id);}
 console.log(JSON.stringify({vehicles:vehicles.rows.length,guides:Object.keys(ctx.window.LEONIDA_GUIDES).length,mapRecords:d.rows.length,vehicleMarkers:cars.length,uniqueIds:true,coordinateBounds:true,scriptSyntax:true,sectionReferences:true},null,2));
+
+// Verify the approved artwork, not merely the existence of an image.
+for(const [path,sha] of [["app/brand-wordmark.webp","eef6f3c8b77e2495af4100379455cd1b3161071f"],["android/app/src/main/res/drawable-nodpi/ultimate_launcher.webp","03254f280970fccff00bfc4bf83774d9db920655"]]){
+ const bytes=await readFile(new URL("../"+path,import.meta.url));
+ assert.equal(createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex"),sha,"Brand artwork mismatch: "+path);
+}
+const manifest=await read("android/app/src/main/AndroidManifest.xml");assert(manifest.includes('android:icon="@drawable/ultimate_launcher"'));assert(manifest.includes('android:roundIcon="@drawable/ultimate_launcher"'));console.log("Approved wordmark and launcher artwork verified.");
