@@ -5,6 +5,9 @@ Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2
 This is a spoiler-light, living research reference for two players who want easier gameplay, high payouts, fast travel and collectibles. The repository is public: do not add personal account details or private screenshots.
 
 ## Start here
+- **[Portable Leonida Companion](Leonida-Companion.html)** — [download raw HTML](https://raw.githubusercontent.com/rhyshoneywood21-blip/GTA-6/main/Leonida-Companion.html). Includes 6,642 source-based map records, vehicle cards and 23 guides. Not phone-tested.
+- **[Android build workflow](https://github.com/rhyshoneywood21-blip/GTA-6/actions)** — APK build configuration committed; actual successful build not yet verified.
+- [Ultimate pass release and quality report](research/ultimate-pass-release.md)
 - [Quick lookup library: missions, codes, maps, races and equipment](guides/reference-library.md)
 - [Expanded robbery and money guide](guides/robbery-expansion.md)
 - [Equipment and phone reference](guides/equipment-and-phone.md)
