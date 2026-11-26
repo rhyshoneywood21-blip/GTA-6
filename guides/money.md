@@ -2,7 +2,7 @@
 ## Chapter priorities
 - Chapter 2: Moses, vehicle registration and fencing; compare available buyers.
 - Chapter 3: Randy's Wish List; high-value cars, condition bonus. Tyrone for narcotics, Yasmani for jewelry and marked bills (reported favorable rates).
-- Chapter 4: Credit Check for bank jobs, then That's Where the Money Is… for vault jobs; check story unlocks in-game.
+- Chapter 3: Credit Check opens small bank jobs. Late Chapter 4: That's Where the Money Is… opens large vault jobs. See [all 22 targets](bank-checklist.md).
 ## Bank targets (reported upper limits, not guaranteed)
 Downtown Lombank and Ocean Beach Lombank: $205k each; VCIA Fleeca and Downtown Fleeca: $150k; Ocean Beach Shorefront: $140k; Ocean Beach Fleeca and another Lombank: $135k; Tequesta Fleeca: $110k. Verify exact branches with actual map, not an invented map.
 All bank map screenshots: https://www.powerpyx.com/gta-6-all-bank-jobs-locations-bank-vaults/
