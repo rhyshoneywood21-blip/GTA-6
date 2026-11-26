@@ -72,3 +72,14 @@ Save in a separate slot before testing exploits. Never assume a video proves an 
 6. Collect permanent stat improvements and free equipment.
 
 Research is versioned here; GitHub does not increase ChatGPT's runtime or cause autonomous research between turns.
+
+## Non-vehicle research pass — 26 November
+- [weapons master](guides/weapons-master.md)
+- [money methods master](guides/money-methods-master.md)
+- [safe code expanded](guides/safe-code-expanded.md)
+- [collectible rewards](guides/collectible-rewards.md)
+- [hidden mechanics expanded](guides/hidden-mechanics-expanded.md)
+- [glitch evidence nov26](research/glitch-evidence-nov26.md)
+- [randy rydeme](guides/randy-rydeme.md)
+- [Weapon catalogue](data/weapons-catalogue.json): 67 candidate names, not a confirmed complete 66-item list.
+- Five existing non-vehicle map subsets rechecked: 3,026 distinct IDs, no duplicated IDs or invalid coordinate bounds. 18 of the 121 safe pins have explicit numeric code observations. These checks do not verify in-game positions or whether codes are fixed. Vehicles, UI and APK untouched. Full weapon stats, rewards, exact in-game locations and actual console glitch reproduction still incomplete.
