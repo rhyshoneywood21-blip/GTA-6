@@ -6,6 +6,8 @@ This is a spoiler-light, living research reference for two players who want easi
 
 ## Current priority — complete research before app release
 No full story mission walkthroughs. Keep only relevant unlock requirements. APK/UI development paused; existing portable version is an earlier prototype.
+
+**Current scope:** weapons are locations, free/hidden pickups, unique finds and useful unlocks only; no exhaustive weapon catalogue, damage ratings or shop prices required. Include source-backed community tips, glitches and farming methods even without Xbox reproduction. Label evidence and patch uncertainty; console verification is optional, not a release blocker. Keep save-risk warnings and exclude the teddy-bear warehouse method. Finish non-vehicle content, then vehicle data, then app packaging.
 - [Data-first research report](research/data-first-pass.md)
 - [Vehicle master research index](data/vehicles-master.json) — 757 exact-name candidate labels, not a verified unique model count.
 - [Vehicle catalogue source facts](data/vehicle-catalogue.json) — 381 entries; 224 reported seat values.
@@ -81,5 +83,5 @@ Research is versioned here; GitHub does not increase ChatGPT's runtime or cause 
 - [hidden mechanics expanded](guides/hidden-mechanics-expanded.md)
 - [glitch evidence nov26](research/glitch-evidence-nov26.md)
 - [randy rydeme](guides/randy-rydeme.md)
-- [Weapon catalogue](data/weapons-catalogue.json): 67 candidate names, not a confirmed complete 66-item list.
-- Five existing non-vehicle map subsets rechecked: 3,026 distinct IDs, no duplicated IDs or invalid coordinate bounds. 18 of the 121 safe pins have explicit numeric code observations. These checks do not verify in-game positions or whether codes are fixed. Vehicles, UI and APK untouched. Full weapon stats, rewards, exact in-game locations and actual console glitch reproduction still incomplete.
+- [Archived weapon research](data/weapons-catalogue.json): retained for reference only; not required in the finished app.
+- Five existing non-vehicle map subsets rechecked: 3,026 distinct IDs, no duplicated IDs or invalid coordinate bounds. 18 of the 121 safe pins have explicit numeric code observations. These checks do not verify in-game positions or whether codes are fixed. Vehicles, UI and APK untouched. Remaining research: safe codes, collectible rewards and locations, money routes, hidden discoveries and additional reported glitches. Full weapon statistics and local glitch reproduction are no longer required.
