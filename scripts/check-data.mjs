@@ -6,7 +6,7 @@ import {createHash} from "node:crypto";
 const read=p=>readFile(new URL("../"+p,import.meta.url),"utf8");
 const h=await read("index.html"),ctx=vm.createContext({window:{}});
 const scripts=[...h.matchAll(/<script src="([^"]+)"><\/script>/g)].map(m=>m[1]);
-for(const p of scripts){const s=await read(p);new vm.Script(s,{filename:p});if(/guide-data|map-data|vehicle-data-final/.test(p))vm.runInContext(s,ctx);}
+for(const p of scripts){const s=await read(p);new vm.Script(s,{filename:p});if(/guide-data|map-data|vehicle-data-final|playbooks/.test(p))vm.runInContext(s,ctx);}
 for(const m of h.matchAll(/<script>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);
 const ids=[...h.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,"duplicate HTML IDs");
 const refs=[...h.matchAll(/\$\("([^"]+)"\)/g)].map(m=>m[1]);for(const id of refs)assert(ids.includes(id),"missing DOM id "+id);
@@ -25,3 +25,5 @@ for(const [path,sha] of [["app/brand-wordmark.webp","eef6f3c8b77e2495af410037945
 const manifest=await read("android/app/src/main/AndroidManifest.xml");assert(manifest.includes('android:icon="@drawable/ultimate_launcher_padded"'));assert(manifest.includes('android:roundIcon="@drawable/ultimate_launcher_padded"'));console.log("Approved wordmark and launcher artwork verified.");
 
 assert((await read("android/app/src/main/res/drawable/ultimate_launcher_padded.xml")).includes('android:inset="12%"'));assert((await read("android/app/src/main/res/drawable-v26/ultimate_launcher_padded.xml")).includes("<adaptive-icon"));assert((await read("android/app/src/main/res/drawable/ultimate_launcher_foreground.xml")).includes('android:inset="24%"'));
+
+const playbooks=ctx.window.ULTIMATE_PLAYBOOKS;assert.equal(Object.keys(playbooks).length,35);for(const path of Object.keys(ctx.window.LEONIDA_GUIDES).filter(p=>!p.endsWith("reference-library.md"))){const id=path.replace(/^guides\//,"").replace(/\.md$/,"");assert(playbooks[id]?.[3]?.length>=3,"Missing action guide "+id);assert(playbooks[id][3].every(t=>t.length<=180),"Overlong step "+id);}

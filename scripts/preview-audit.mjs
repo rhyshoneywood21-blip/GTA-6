@@ -42,7 +42,7 @@ try{
   for(const id of ids){if(visited.has(id))continue;visited.add(id);await attempt("guides",id,async()=>{
    await page.evaluate(({id,pageName})=>{go(pageName);openGuide(id,pageName);},{id,pageName});
    await page.locator(".guide-reader").waitFor({state:"visible",timeout:5000});
-   return capture("guide-"+slug(id),".guide-reader");
+   const result=await capture("guide-"+slug(id),".guide-reader");result.actionSteps=await page.locator(".playbook-steps li").count();result.topicCount=await page.locator(".topic-button").count();result.referenceClosed=await page.locator(".playbook-reference").evaluate(e=>!e.open);assert(result.actionSteps>=3,"Missing action steps "+id);assert(result.referenceClosed,"Reference opened by default "+id);return result;
   });}
  }
  await page.evaluate(()=>go("progress"));
