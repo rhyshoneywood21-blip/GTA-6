@@ -11,7 +11,7 @@
 | Meditation | 18 completions | 15 | Track both characters where applicable; early opportunity may matter to achievements |
 | Styles | 79 | 70 | Style unlocks |
 | Unique playlists | 2 | 2 | Music collection |
-| Meteorites | Map count varies | Not a separate listed 100% requirement | Optional; reward not verified here |
+| Meteorites | Map count varies | Not a separate listed 100% requirement | Optional; reward unconfirmed |
 ## Efficient route
 Finish nearby required categories together, use the exact provider pin, mark found only after the game confirms the item. When doing Kenton sets, track the underwater-discovery counter separately. Prioritize complete card sets over scattered cards if the goal is 100%. For an all-achievements run, compare the trophy roadmap with the completion checklist.
 ## Map audit

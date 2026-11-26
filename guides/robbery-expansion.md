@@ -34,4 +34,4 @@ https://alcasthq.com/gta-6-make-money/ (26 Nov, reported gameplay experience)
 https://gtaviceguides.com/guides/gta-6-repeatable-money-methods/ (25 Nov, repeatability caveats)
 https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-money-guide (26 Nov)
 https://www.powerpyx.com/gta-6-100-completion-checklist-guide/
-Exact individual pawn/jewelry pin list remains linked, not transcribed. No measured Series S profit rates.
+Use the linked pawn and jewelry map to find individual shops. Payouts and repeat income vary.
