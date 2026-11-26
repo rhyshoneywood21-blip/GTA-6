@@ -2,12 +2,13 @@ name: Stage 5 browser QA (no APK)
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, v2.2.0-qa]
     paths:
       - '.github/workflows/stage5-qa.yml'
       - 'scripts/browser-test.mjs'
       - 'app/live-map.js'
       - 'index.html'
+      - 'app/v220-*.js'
 permissions:
   contents: read
 jobs:
