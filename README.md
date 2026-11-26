@@ -5,6 +5,11 @@ Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2
 This is a spoiler-light, living research reference for two players who want easier gameplay, high payouts, fast travel and collectibles. The repository is public: do not add personal account details or private screenshots.
 
 ## Start here
+- **[Play tonight — quick-start](guides/quick-start.md)** (chapter-by-chapter priorities)
+- [Safe and garage codes](guides/safe-codes.md)
+- [Permanent stat upgrades](guides/permanent-upgrades.md)
+- [All seven fences and eight large vault targets](guides/fences-and-banks.md)
+- [Research pass 2: evidence and corrections](research/2026-11-26-pass-2.md)
 - [Randy's Wish List and RydeMe](guides/randy-rydeme.md)
 - [Money, banks and fencing](guides/money.md)
 - [Accessibility, controls and character upgrades](guides/gameplay.md)
