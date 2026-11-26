@@ -1,4 +1,5 @@
-# Weapon collection and equipment reference
+# Free, hidden and unique weapon locations
+Scope revised by user: keep pickup locations, unique finds, useful unlocks and equipment tips. Detailed weapon statistics and purchase catalogues are archived research, not required app content. Use Ammu-Nation for purchase comparisons.
 Checked 26 November 2026. All weapons and numbers refer only to GTA VI.
 ## What the game tracks
 66 standard weapons (53 guns, 9 melee, 4 explosives), 130 unique variants, 196 total. Only 50 of the standard items are needed for 100%. Collecting a variant is not a substitute for the game's standard-discovery counter. Use Progress > Weapons to confirm.
@@ -18,5 +19,5 @@ The [weapon research catalogue](../data/weapons-catalogue.json) contains 51 cros
 [Weapon and variant database](https://cutscenewire.com/games/gta-6/weapon-list/) (Nov 26: reports 188 checked entries, 138 with stats and 86 with prices; not imported wholesale).
 [Unique variants](https://www.gtabase.com/gta-6/weapons/)
 [Equipment and phone tools](equipment-and-phone.md)
-## Completion gaps
-Two additional gun names and exact standard classification need verification; melee classification differs between sources. Full variant roster, all shop prices, stat cards, unlocks and model-specific pickup links remain incomplete. No fabricated values. Source pages returned cache misses; indexed extracts used for supported facts. 
+## Remaining useful research
+Expand hidden and free pickup locations, acquisition prerequisites and original map references where available. No need to complete the weapon roster, shop-price list or stat cards. Preserve unknowns. 
