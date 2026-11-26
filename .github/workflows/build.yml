@@ -1,15 +1,6 @@
 name: Build Leonida Companion
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'index.html'
-      - 'app/**'
-      - 'data/**'
-      - 'android/**'
-      - 'scripts/**'
-      - '.github/workflows/build.yml'
 permissions:
   contents: read
 jobs:
