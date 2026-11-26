@@ -31,3 +31,7 @@ Sources: https://gta6playertools.com/guides/stat-boosts ; https://gtascoop.com/g
 - Tower Easter egg: Bluegrass, southern Vice-Dale; climb the radio tower. Sightseeing, no cash reward established.
 - Fountain of Youth, beached whale, SOS island and Giant Grab observatory: map-linked sightseeing; don't assume rewards.
 Sources: https://openleonida.com/guides/gta-vi-easter-eggs-secrets/ ; https://www.vicevaulted.com/c/glitches ; https://gta6.house/library/locations/pelican-valley ; https://www.gtabase.com/gta-6/map/?feature=easter-eggs (62 reported entries).
+
+## Sunlite Motel
+Reported Little Friend W-10 reward. Try the Sunlite Motel on Shore Drive around noon (12:00–13:00 is a published window). Check the upstairs first door, cross the balcony and return to street level using the opposite stairs. After the encounter, revisit the room for the pickup. Exact chapter access not independently tested.
+Sources: https://www.dexerto.com/wikis/gta-6/easter-eggs/scarface/ ; https://www.gta6walk.com/guides/scarface-easter-egg-little-friend-smg/

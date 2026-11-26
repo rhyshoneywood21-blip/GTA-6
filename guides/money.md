@@ -12,3 +12,7 @@ Family Savings is reported deposit-only; verify UI before depositing funds neede
 ## Sources
 https://www.gamesradar.com/games/grand-theft-auto/gta-6-fences/ (Nov 25)
 https://www.powerpyx.com/gta-6-randys-wish-list-car-locations-walkthrough/ (Nov 25)
+
+## Protect your cash
+In-game Help screenshots report a $20,000 pocket cash limit for each character. Death/arrest can remove carried cash and unowned weapons, charge a maintenance fee and cause loss of carried bags. Use ATM deposits and keep a small amount for day-to-day costs. Recover owned weapons through the personal vehicle trunk or weapon locker when available.
+Sources: https://allthings.how/gta-6-things-the-game-doesnt-tell-you/ ; https://www.pcgamer.com/games/grand-theft-auto/gta-6-bank-cash/

@@ -19,3 +19,10 @@ Official: https://support.rockstargames.com/articles/5g5CmDTne3WcpK7nsWsMR8/gran
 ## Travel shortcuts
 RydeMe or Paradise Taxi: choose reachable destination, board, hold LT to focus on driver and press Y when Skip Journey appears. $100 additional charge. If gated pickup fails, move to public road; taxi may be an alternative. If services stop responding, save and fully close/reopen game (community workaround, not guaranteed).
 Sources: https://www.gtabase.com/gta-6/articles/how-to-fast-travel-in-gta-6 ; https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast ; https://www.reddit.com/r/GTA6unmoderated/comments/1y1l3g0/am_i_bugged_rydeme_and_scooter_bros_wont_do_their/
+
+## Before leaving a chapter
+- Chapter 1: accept morning meditation with Lucia at Jason's balcony if offered; possible achievement requirement.
+- Don Gone: collect Donnie's Aviators from the trailer bathroom and his unique H&L .38 from the red Blista's trunk before disposal.
+- Chapter 2: check Starlet Motel's office bathroom and kitchen fridge for Vicki and Victor Maravilla cards. Later access reports disagree.
+- Pick up magazines in chapter-specific homes while available. Titles may be obtainable elsewhere. Do not claim that missing these automatically prevents 100%.
+Sources: https://gta6walk.com/collectibles/missables/ ; https://allthings.how/gta-6-don-gone-walkthrough/ ; https://www.reddit.com/r/grandtheftauto/comments/1y1mrn4/list_of_all_missables_in_gta_6_aggregated_from/
