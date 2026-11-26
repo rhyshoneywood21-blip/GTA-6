@@ -1,0 +1,16 @@
+import {readFile} from "node:fs/promises";
+import assert from "node:assert/strict";
+import vm from "node:vm";
+const root=new URL("../",import.meta.url),read=p=>readFile(new URL(p,root),"utf8");
+const v=JSON.parse(await read("preparation/vehicle-cards-data.json")),m=JSON.parse(await read("preparation/guide-manifest.json"));
+assert.equal(v.rows.length,560);assert.equal(new Set(v.rows.map(r=>r.slug)).size,560);
+assert(v.rows.every(r=>r.name&&r.reference&&r.sources.length));
+assert(v.rows.every(r=>Object.values(r.stats).every(x=>Number.isFinite(x)&&x>=0&&x<=10)));
+assert.equal(v.rows.filter(r=>r.variant).length,281);
+const ctx=vm.createContext({window:{}});
+for(let i=1;i<=4;i++)vm.runInContext(await read("app/map-data-"+i+".js"),ctx);
+const ids=new Set(ctx.window.LEONIDA_MAP.rows.map(r=>r[0]));
+for(const r of v.rows)for(const p of r.pins)assert(ids.has(p.id),"unmatched map ID "+p.id);
+for(const p of m.paths)assert((await read(p)).startsWith("# "),p);
+for(const arr of Object.values(m.pages))for(const x of arr)assert(m.paths.includes((x.includes("/")?x:"guides/"+x)+".md"));
+console.log(JSON.stringify({profiles:v.rows.length,guideFiles:m.paths.length,mapRecords:ids.size,vehiclePins:v.meta.counts.pins,allReferencesValid:true}));

@@ -1,0 +1,10 @@
+# Preparation pass 1 — 26 November 2026
+No branding, UI integration, APK generation or workflow run. Existing prototype untouched.
+## Guide plan
+36 current guide files across ten sections (13 not in the old route list). Manifest validated against repository tree. Generator reads latest Markdown at execution, filters the standalone story-walkthrough links in the lookup library, excludes archived weapon catalogue and price/stat guide, and outputs an offline bundle plus section routes. Original Markdown remains intact. Generation/runtime checks not yet executed.
+## Vehicle card projection
+{"profiles":560,"variants":281,"fullStats":442,"photos":195,"location":324,"pins":337,"seats":395,"cargo":16,"acquisition":66,"registration":14,"sale":13}. All 560 unique canonical slugs and source/reference links checked, stat ranges 0–10 checked. Original V2 preserved including unresolved taxi; aliases provisional, exact map IDs and source-based location leads, photo links not downloaded, optional storage/seats. Full card rendering and map-ID crosscheck remain pending execution of preparation validator.
+## Workflow
+Run #13 / job 140064847088 logs: Ubuntu 26.04 runner, Playwright 1.51.1 failed with “Playwright does not support chromium on ubuntu26.04-x64”. Pinned runner to ubuntu-24.04; manual workflow dispatch retained. Fix is not proven until a run; no workflow requested.
+## Remaining
+Run preparation scripts and verify generated assets, inspect guide conflict/overlap and rendered links, wire the final bundles and canonical cards into existing app (including global search and weapon page catalogue removal), approve branding and polish, run browser tests, then manual APK build and both-phone testing. No claim of complete official roster or verified game mechanics.

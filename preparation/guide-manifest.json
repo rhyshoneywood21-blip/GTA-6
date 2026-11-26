@@ -1,0 +1,143 @@
+{
+  "version": "1.0-preparation",
+  "date": "2026-11-26",
+  "pages": {
+    "vehicles": [
+      "garage-and-vehicles",
+      "vehicle-spawn-field-guide",
+      "rare-vehicle-route"
+    ],
+    "money": [
+      "money-methods-master",
+      "money",
+      "fences-and-banks",
+      "bank-checklist",
+      "robbery-expansion",
+      "side-income-expanded",
+      "racing-and-money-efficiency"
+    ],
+    "glitches": [
+      "research/reported-glitch-additions",
+      "research/glitch-evidence-nov26",
+      "research/exploits",
+      "randy-rydeme",
+      "troubleshooting-and-patch"
+    ],
+    "weapons": [
+      "free-pickups-expanded",
+      "free-weapon-route",
+      "equipment-and-phone"
+    ],
+    "randy": [
+      "randy-full-checklist",
+      "randy-rydeme",
+      "vehicle-spawn-field-guide"
+    ],
+    "gameplay": [
+      "quick-start",
+      "xbox-accessibility",
+      "quick-tricks",
+      "hidden-mechanics-expanded",
+      "permanent-upgrades",
+      "secret-discoveries",
+      "discoveries",
+      "gameplay",
+      "equipment-and-phone",
+      "troubleshooting-and-patch"
+    ],
+    "progress": [
+      "completion",
+      "operations-checklist",
+      "collectible-field-guide",
+      "collectible-rewards",
+      "collectibles-and-cheat-rewards"
+    ],
+    "codes": [
+      "safe-code-expanded",
+      "code-puzzles",
+      "safe-codes"
+    ],
+    "routes": [
+      "operations-checklist",
+      "side-income-expanded",
+      "racing-and-money-efficiency",
+      "rare-vehicle-route",
+      "free-pickups-expanded",
+      "robbery-expansion",
+      "collectible-field-guide",
+      "vehicle-spawn-field-guide"
+    ],
+    "map": [
+      "reference-library"
+    ]
+  },
+  "paths": [
+    "guides/garage-and-vehicles.md",
+    "guides/vehicle-spawn-field-guide.md",
+    "guides/rare-vehicle-route.md",
+    "guides/money-methods-master.md",
+    "guides/money.md",
+    "guides/fences-and-banks.md",
+    "guides/bank-checklist.md",
+    "guides/robbery-expansion.md",
+    "guides/side-income-expanded.md",
+    "guides/racing-and-money-efficiency.md",
+    "research/reported-glitch-additions.md",
+    "research/glitch-evidence-nov26.md",
+    "research/exploits.md",
+    "guides/randy-rydeme.md",
+    "guides/troubleshooting-and-patch.md",
+    "guides/free-pickups-expanded.md",
+    "guides/free-weapon-route.md",
+    "guides/equipment-and-phone.md",
+    "guides/randy-full-checklist.md",
+    "guides/quick-start.md",
+    "guides/xbox-accessibility.md",
+    "guides/quick-tricks.md",
+    "guides/hidden-mechanics-expanded.md",
+    "guides/permanent-upgrades.md",
+    "guides/secret-discoveries.md",
+    "guides/discoveries.md",
+    "guides/gameplay.md",
+    "guides/completion.md",
+    "guides/operations-checklist.md",
+    "guides/collectible-field-guide.md",
+    "guides/collectible-rewards.md",
+    "guides/collectibles-and-cheat-rewards.md",
+    "guides/safe-code-expanded.md",
+    "guides/code-puzzles.md",
+    "guides/safe-codes.md",
+    "guides/reference-library.md"
+  ],
+  "scope": {
+    "mode": "story",
+    "platform": "Xbox Series S",
+    "seatsAndStorage": "optional",
+    "weaponScope": "free and hidden pickups, unique finds, equipment and unlocks only",
+    "excluded": [
+      "story mission walkthrough catalogue",
+      "weapon stats and shop prices",
+      "teddy-bear warehouse farm"
+    ],
+    "verification": "source-reported; console reproduction not a launch gate"
+  },
+  "newlyBundled": [
+    "guides/money-methods-master.md",
+    "guides/side-income-expanded.md",
+    "research/reported-glitch-additions.md",
+    "research/glitch-evidence-nov26.md",
+    "guides/free-pickups-expanded.md",
+    "guides/hidden-mechanics-expanded.md",
+    "guides/secret-discoveries.md",
+    "guides/discoveries.md",
+    "guides/gameplay.md",
+    "guides/collectible-rewards.md",
+    "guides/collectibles-and-cheat-rewards.md",
+    "guides/safe-code-expanded.md",
+    "guides/code-puzzles.md"
+  ],
+  "excludedArchives": [
+    "guides/weapons-master.md",
+    "data/weapons-catalogue.json"
+  ]
+}
