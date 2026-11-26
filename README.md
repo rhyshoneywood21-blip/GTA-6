@@ -5,7 +5,13 @@ Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2
 This is a spoiler-light, living research reference for two players who want easier gameplay, high payouts, fast travel and collectibles. The repository is public: do not add personal account details or private screenshots.
 
 ## Start here
-- **[New Leonida Companion dashboard](index.html)** — app source; requires both bundled guide-data scripts under app/. Not hosted yet.
+- [Quick lookup library: missions, codes, maps, races and equipment](guides/reference-library.md)
+- [Expanded robbery and money guide](guides/robbery-expansion.md)
+- [Equipment and phone reference](guides/equipment-and-phone.md)
+- [Collectibles field guide](guides/collectible-field-guide.md)
+- [Vehicle spawn field guide](guides/vehicle-spawn-field-guide.md)
+- [Patch and troubleshooting guide](guides/troubleshooting-and-patch.md)
+- **[New Leonida Companion dashboard](index.html)** — app source; requires the three bundled guide-data scripts under app/. Not hosted yet.
 - [App coverage audit](research/app-coverage-audit.md) — what is ready and what still needs research.
 - [Android APK and independent map roadmap](app/ROADMAP.md)
 - [Map and vehicle data source research](research/map-data-sources.md)
