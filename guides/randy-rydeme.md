@@ -38,3 +38,10 @@ Peacock Estates: take RydeMe to gate, walk along residential streets, scan drive
 - https://www.reddit.com/r/GTA6unmoderated/comments/1y507eh/chapter_3_randys_car_list_can_be_done_super/ (Nov 25, estate farming; does not prove partner teleport)
 - https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations (WIP, 20)
 - https://gtatown.com/garage/randy-wish-list (22 incl. later additions)
+
+## November 26 cross-check
+- November 25 published fast-travel guide supports Wait In > board taxi > Follow Me > Skip Journey. For normal taxi skip, hold LT then press Y when prompted; $100 extra. https://gta6.house/guides/gta-6-fast-travel-stolen-cars-rydeme ; https://www.gtabase.com/gta-6/articles/how-to-fast-travel-in-gta-6
+- No guarantee that the partner can start an inaccessible car or leave a gated estate. First test a car in an open driveway. RydeMe pickup is on a reachable road; destination is Randy's garage, not the stolen vehicle.
+- Advanced-tracker registration: finish Randy's required deliveries, progress Chapter 4 through Photo/Shoot and complete Dale Mamba (Mamba GT). Earlier 5–7-car claims are not reliable. https://www.vice.com/en/article/gta-6-advanced-tracker-removal/ ; https://www.powerpyx.com/gta-6-how-to-register-advanced-tracker-cars/
+- Delivery Day finale pays a reported $25,000 and unlocks Supply & Demand. https://www.powerpyx.com/gta-6-delivery-day-meet-randy-walkthrough/
+- If taxi stops working, save then fully quit and reopen (reported Xbox workaround). If Randy's payout or marker fails, retain a save from before delivery.
