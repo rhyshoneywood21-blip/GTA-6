@@ -13,7 +13,7 @@ Map hover shows actual rate tiers. Early goods buyers use drop boxes with delaye
 Map: https://www.gtabase.com/gta-6/map/?feature=fence
 Sources: https://www.powerpyx.com/gta-6-all-fence-locations-how-to-fence-stolen-goods/ ; https://www.pcgamer.com/games/grand-theft-auto/gta-6-fence-locations/ ; https://www.gamesradar.com/games/grand-theft-auto/gta-6-fences/
 ## Bank jobs
-14 small + 8 large = 22. Small banks after Credit Check; vaults near end Ch4 after That's Where The Money Is… (Wait at the Cafe). Use Map > Robberies > Bank Jobs. Five large vaults reportedly unlock Maximum Withdrawal achievement. All 22 for completion checklist. Repeat availability and cooldown must be checked in-game.
+14 small + 8 large = 22. Small banks in Chapter 3 after Credit Check; vaults near end Ch4 after That's Where The Money Is… (Wait at the Cafe). Use Map > Robberies > Bank Jobs. Five large vaults reportedly unlock Maximum Withdrawal achievement. All 22 for completion checklist. Repeat availability and cooldown must be checked in-game.
 | Large branch | Reported max |
 |---|---:|
 | Downtown Lombank | $205,000 |
