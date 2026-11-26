@@ -80,7 +80,7 @@ public class MainActivity extends Activity {
                     runOnUiThread(()->{
                         pendingExport=json;Intent i=new Intent(Intent.ACTION_CREATE_DOCUMENT);
                         i.addCategory(Intent.CATEGORY_OPENABLE);i.setType("application/json");
-                        i.putExtra(Intent.EXTRA_TITLE,"leonida-progress.json");
+                        i.putExtra(Intent.EXTRA_TITLE,"gta6-ultimate-progress.json");
                         try{startActivityForResult(i,EXPORT);}catch(Exception e){pendingExport=null;toast("No file picker");}
                     });
                 });

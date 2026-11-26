@@ -5,7 +5,7 @@ const data=window.LEONIDA_MAP;if(!data||!Array.isArray(data.rows))return;
 const byId=new Map(data.rows.map(r=>[r[0],r])),cats=new Map(data.categories.map(c=>[c.key,c]));
 const text=(tag,t)=>{const n=document.createElement(tag);if(t!=null)n.textContent=t;return n};
 const b=(t,f)=>{const n=text("button",t);n.type="button";n.onclick=f;return n};
-const a=(t,url)=>{const n=text("a",t);n.href=url;n.target="_blank";n.rel="noopener noreferrer";return n};
+const a=(t,url)=>{const n=text("a",t);n.href=url;n.rel="noopener noreferrer";return n};
 const $=id=>document.getElementById(id);
 const source="https://fbritoferreira.github.io/gta6/";
 const key="leonida-map-progress-v1";let records={p1:{},p2:{}};
@@ -26,7 +26,7 @@ const canvas=text("canvas");canvas.style.cssText="width:100%;height:440px;max-he
 const ctx=canvas.getContext("2d");const controls=text("div");controls.className="line";controls.style.margin="8px 0";let cx=405,cy=495,scale=1,w=1,h=1,matching=[],selected=null,limit=40,drag=null,frame=0,ready=false;
 const cache=new Map();
 function fit(){if(!ctx)return;const rect=canvas.getBoundingClientRect();if(rect.width<2||rect.height<2)return;const dpr=Math.min(devicePixelRatio||1,2);w=rect.width;h=rect.height;canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);if(!ready){scale=Math.max(.4,Math.min(w/440,h/600));ready=true;}draw();}
-function tile(z,x,y){const k=z+"/"+y+"/"+x;if(cache.has(k))return cache.get(k);const im=new Image();const rec={im,ok:false};cache.set(k,rec);im.onload=()=>{rec.ok=true;draw();};im.onerror=()=>{rec.ok=false;};im.src=source+"tiles/night/"+z+"/"+z+","+y+","+x+".webp";if(cache.size>200){const first=cache.keys().next().value;if(first!==k)cache.delete(first);}return rec;}
+function tile(z,x,y){const k=z+"/"+y+"/"+x;if(cache.has(k))return cache.get(k);const im=new Image();const rec={im,ok:false};cache.set(k,rec);im.onload=()=>{rec.ok=true;draw();};im.onerror=()=>{rec.ok=false;draw();};im.src=source+"tiles/night/"+z+"/"+z+","+y+","+x+".webp";if(cache.size>200){const first=cache.keys().next().value;if(first!==k)cache.delete(first);}return rec;}
 const screen=(x,y)=>[(x-cx)*scale+w/2,(y-cy)*scale+h/2];
 function draw(){if(!ctx||frame)return;frame=requestAnimationFrame(()=>{frame=0;if(!ready||!canvas.isConnected)return;ctx.clearRect(0,0,w,h);ctx.fillStyle="#101526";ctx.fillRect(0,0,w,h);
 const z=Math.max(0,Math.min(5,Math.floor(Math.log2(Math.max(1,scale))))),unit=256/2**z,edge=4*2**z;
@@ -37,7 +37,7 @@ for(const r of matching){const [x,y]=screen(r[3],r[4]);if(x<0||y<0||x>w||y>h)con
 ctx.fillStyle="#100f1d";ctx.fillRect(0,h-20,w,20);ctx.fillStyle="#d6d0e7";ctx.font="10px system-ui";ctx.fillText("Open GTA 6 Map · CC BY 4.0 · community data",7,h-6);
 });}
 function zoom(factor){scale=Math.min(24,Math.max(.35,scale*factor));draw();}
-controls.append(b("−",()=>zoom(1/1.5)),b("+",()=>zoom(1.5)),b("Reset",()=>{cx=405;cy=495;ready=false;fit();}),b("Open source map",()=>window.open(source,"_blank","noopener,noreferrer")));
+controls.append(b("−",()=>zoom(1/1.5)),b("+",()=>zoom(1.5)),b("Reset",()=>{cx=405;cy=495;ready=false;fit();}),b("Open source map",()=>location.assign(source)));
 function point(r){selected=r[0];cx=r[3];cy=r[4];scale=Math.max(scale,5);detail.replaceChildren(text("h3",r[1]),text("p",(cats.get(r[2])?.name||r[2])+" · "+(r[6]||"Location")+" · "+(r[5]||"Area not supplied")),text("small","Evidence: "+r[7]+". Provider report, not independently checked."));if(r[8])detail.append(text("p",r[8]));detail.append(a("Open precise source pin",source+"?id="+encodeURIComponent(r[0])),document.createTextNode(" "),b(found(r[0])?"Mark not found":"Mark found",()=>{if(found(r[0]))delete records[current()][r[0]];else records[current()][r[0]]=true;save();refresh();point(r);}));for(const u of r[10]||[])if(/^https:\/\//i.test(u))detail.append(text("br"),a("Original evidence",u));draw();}
 canvas.addEventListener("pointerdown",e=>{canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,cx,cy,moved:false};});canvas.addEventListener("pointermove",e=>{if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.hypot(dx,dy)>5)drag.moved=true;if(drag.moved){cx=drag.cx-dx/scale;cy=drag.cy-dy/scale;draw();}});canvas.addEventListener("pointercancel",()=>drag=null);canvas.addEventListener("pointerup",e=>{if(!drag)return;const moved=drag.moved;drag=null;if(moved)return;const rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;let nearest=null,dist=18;for(const r of matching){const [sx,sy]=screen(r[3],r[4]),d=Math.hypot(x-sx,y-sy);if(d<dist){dist=d;nearest=r;}}if(nearest)point(nearest);});
 canvas.addEventListener("wheel",e=>{e.preventDefault();zoom(e.deltaY<0?1.2:1/1.2);},{passive:false});

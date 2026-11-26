@@ -1,0 +1,35 @@
+name: Stage 5 browser QA (no APK)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/stage5-qa.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Static checks and web assets
+        run: |
+          node scripts/check-preparation.mjs
+          node scripts/check-data.mjs
+          node scripts/build-assets.mjs
+      - name: Install browser
+        run: |
+          npm install --no-save playwright@1.51.1
+          npx playwright install --with-deps chromium
+      - name: Browser QA
+        run: node scripts/browser-test.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: stage5-visual-checks
+          path: qa-artifacts/
+          if-no-files-found: ignore
