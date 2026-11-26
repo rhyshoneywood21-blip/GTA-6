@@ -5,6 +5,18 @@ Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2
 This is a spoiler-light, living research reference for two players who want easier gameplay, high payouts, fast travel and collectibles. The repository is public: do not add personal account details or private screenshots.
 
 ## Start here
+- **[Expanded Randy vehicle checklist (16 core + later/disputed)](guides/randy-full-checklist.md)**
+- [All 22 bank targets](guides/bank-checklist.md) · [CSV](data/banks.csv)
+- [All 39 gang operations](guides/operations-checklist.md)
+- [35 completion requirements](guides/completion.md)
+- [Garage prices and ownership](guides/garage-and-vehicles.md)
+- [Free weapon pickup routes](guides/free-weapon-route.md)
+- [Rare vehicle routes](guides/rare-vehicle-route.md)
+- [Xbox accessibility and partner controls](guides/xbox-accessibility.md)
+- [Racing and money efficiency](guides/racing-and-money-efficiency.md)
+- [Phone companion (offline HTML)](companion.html) — download and open in a browser; not a hosted site
+- [Research pass 3–4 evidence and corrections](research/2026-11-26-pass-3-4.md)
+
 - **[Play tonight — quick-start](guides/quick-start.md)** (chapter-by-chapter priorities)
 - [Safe and garage codes](guides/safe-codes.md)
 - [Permanent stat upgrades](guides/permanent-upgrades.md)
