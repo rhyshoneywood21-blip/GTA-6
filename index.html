@@ -109,7 +109,7 @@ function showGuide(page){
  if(/^[-*] |^\d+\. /.test(l)){const ordered=/^\d+\. /.test(l),list=node(ordered?"ol":"ul",undefined,"guide-list");while(i<lines.length&& (ordered?/^\d+\. /:/^[-*] /).test(lines[i].trim())){addText(list,"li",lines[i++].trim().replace(/^(?:[-*]|\d+\.) /,"").replace(/^\[ \] /,""));}section.append(list);continue;}
  if(/^(?:Updated |Research checked |November 26|26 November 2026\.|Story mode, Xbox\.|No full weapon statistics|No warehouse farming|All locations refer exclusively|Counts from in-game checklist guides)/i.test(l)&&l.length<260){addText(evidence,"p",l);i++;continue;}
  if(/\.\.\/data\/|\b(?:data|research)\/[\w.-]+\.(?:json|csv|md)/i.test(l)){addText(evidence,"p",l);i++;continue;}
- const sentences=l.match(/[^.!?]+(?:[.!?](?=\s|$)|$)/g);
+ const sentences=l.split(/(?<=[.!?])\s+(?=[A-Z0-9])/g);
  if(l.length>280&&sentences&&sentences.length>=3&&!/https:\/\/|\]\(/.test(l)){const list=node("ul",undefined,"reader-points");for(const sentence of sentences)addText(list,"li",sentence.trim());section.append(list);}else addText(section,"p",l,/^(?:Important|Warning|Note:)/i.test(l)?"guide-warning":undefined);i++;
  }
  evidence.append(safeLink("Read original guide","https://github.com/rhyshoneywood21-blip/GTA-6/blob/main/"+p));d.append(evidence);library.append(d);cards.push({d,hay:(title+" "+md).toLowerCase()});
