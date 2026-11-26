@@ -1,0 +1,61 @@
+name: Build Leonida Companion
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'app/**'
+      - 'data/**'
+      - 'android/**'
+      - 'scripts/**'
+      - '.github/workflows/build.yml'
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch optional licensed catalogue
+        run: node scripts/fetch-catalog.mjs
+      - name: Validate data and build assets
+        run: |
+          node scripts/check-data.mjs
+          node scripts/build-assets.mjs
+      - name: Install browser test dependencies
+        run: |
+          npm install --no-save playwright@1.51.1
+          npx playwright install --with-deps chromium
+      - name: Run mobile-browser tests
+        run: node scripts/browser-test.mjs
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install Android SDK
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Assemble debug APK
+        run: gradle -p android :app:assembleDebug
+      - name: Upload installable debug build
+        uses: actions/upload-artifact@v4
+        with:
+          name: Leonida-Companion-Android
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+      - name: Upload standalone browser edition and import report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Leonida-Companion-Web
+          path: |
+            dist/Leonida-Companion.html
+            data/catalog-import-report.json
+          if-no-files-found: error
