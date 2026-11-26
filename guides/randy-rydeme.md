@@ -47,3 +47,8 @@ Peacock Estates: take RydeMe to gate, walk along residential streets, scan drive
 - If taxi stops working, save then fully quit and reopen (reported Xbox workaround). If Randy's payout or marker fails, retain a save from before delivery.
 
 See [expanded checklist and correction](randy-full-checklist.md) for 16 initial cars, later objectives and disputed board entries.
+
+## November 26 targeted recheck
+The Nov 25 CutsceneWire step sequence supports requesting RydeMe to Randy before seating the partner. GTA6.house text also describes ordering before the Wait In step, despite a different summary ordering. Both may derive from Game Rant. The partner-driver alternative (follow in stolen car while active player drives normally) is also reported; test before using on a valuable target. $100 is the reported skip fee, not necessarily total ride cost. Keep the original vehicle list unchanged during the deferred vehicle phase.
+Sources: https://cutscenewire.com/games/gta-6/vehicles/how-to-fast-travel-with-stolen-cars-without-damage-in-gta-6/ ; https://gta6.house/guides/gta-6-fast-travel-stolen-cars-rydeme ; https://www.vicevaulted.com/d/gta6-partner-driver-tracker-bypass-exploit
+No independently reproduced Xbox Series S test or guaranteed driveway solution.
