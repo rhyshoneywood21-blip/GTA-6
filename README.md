@@ -15,6 +15,17 @@ No full story mission walkthroughs. Keep only relevant unlock requirements. APK/
 - [Weapon pickup locations](data/weapon-pickups.json)
 - [Robbery pins](data/crime-pins.json) · [Collectible pins](data/collectibles-pins.json) · [Activity pins](data/activities-pins.json)
 
+## Latest gameplay research — consolidated pass
+- **[Research index and map coverage](research/non-vehicle-consolidated.md)**
+- [Secret discoveries and permanent upgrades](guides/secret-discoveries.md)
+- [Free and hidden pickup routes](guides/free-pickups-expanded.md)
+- [Side income and farming sessions](guides/side-income-expanded.md)
+- [Reported glitch additions](research/reported-glitch-additions.md)
+- [Additional codes and puzzles](guides/code-puzzles.md)
+- [Collectible rewards and cheat unlocks](guides/collectibles-and-cheat-rewards.md)
+- [Updated hidden Xbox tricks](guides/quick-tricks.md)
+- [Updated Randy/RydeMe report](guides/randy-rydeme.md)
+
 ## Existing prototype and guides
 - **[Portable Leonida Companion](Leonida-Companion.html)** — [download raw HTML](https://raw.githubusercontent.com/rhyshoneywood21-blip/GTA-6/main/Leonida-Companion.html). Includes 6,642 source-based map records, vehicle cards and 23 guides. Not phone-tested.
 - **[Android build workflow](https://github.com/rhyshoneywood21-blip/GTA-6/actions)** — manual-only during research; actual successful build not yet verified.
