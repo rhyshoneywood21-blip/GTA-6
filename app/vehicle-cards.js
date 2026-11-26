@@ -12,8 +12,8 @@ const link=(t,u)=>{const a=el("a",t);if(https(u))a.href=u;return a;};
 const unique=a=>[...new Set(a.filter(Boolean))];
 const names=new Map();for(const v of rows)for(const n of unique([v.name,...v.aliases])){const k=norm(n);if(!names.has(k))names.set(k,new Set());names.get(k).add(v.slug);}
 function belongs(v,n){return n===v.slug||(names.get(norm(n))?.size===1&&names.get(norm(n)).has(v.slug));}
-function has(v,k){return (extras[player][k]||[]).some(n=>belongs(v,n));}
-function toggle(v,k){const a=extras[player][k]||[];extras[player][k]=has(v,k)?a.filter(n=>!belongs(v,n)):[...a,v.name];storeExtra();drawCars();}
+function has(v,k){return (extras.p1[k]||[]).some(n=>belongs(v,n));}
+function toggle(v,k){const a=extras.p1[k]||[];extras.p1[k]=has(v,k)?a.filter(n=>!belongs(v,n)):[...a,v.name];storeExtra();drawCars();}
 const q=el("input");q.type="search";q.placeholder="Search by vehicle, class or location";q.setAttribute("aria-label","Search vehicle cards");q.style.width="100%";
 const filter=el("select");filter.setAttribute("aria-label","Filter vehicle cards");for(const [label,value] of [["All vehicles",""],["Base / non-Standout","base"],["Standout variants","standout"],["Location leads","location"],["Randy targets","randy"],["Photo references","photo"],["Favorites","favorites"],["Owned vehicles","owned"],["Known seats","seats"],["Known storage","cargo"]])filter.add(new Option(label,value));
 const category=el("select");category.setAttribute("aria-label","Vehicle category");category.add(new Option("All classes",""));for(const c of unique(rows.map(v=>v.class)).sort())category.add(new Option(c,c));
