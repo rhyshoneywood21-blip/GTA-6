@@ -22,4 +22,6 @@ for(const [path,sha] of [["app/brand-wordmark.webp","eef6f3c8b77e2495af410037945
  const bytes=await readFile(new URL("../"+path,import.meta.url));
  assert.equal(createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex"),sha,"Brand artwork mismatch: "+path);
 }
-const manifest=await read("android/app/src/main/AndroidManifest.xml");assert(manifest.includes('android:icon="@drawable/ultimate_launcher"'));assert(manifest.includes('android:roundIcon="@drawable/ultimate_launcher"'));console.log("Approved wordmark and launcher artwork verified.");
+const manifest=await read("android/app/src/main/AndroidManifest.xml");assert(manifest.includes('android:icon="@drawable/ultimate_launcher_padded"'));assert(manifest.includes('android:roundIcon="@drawable/ultimate_launcher_padded"'));console.log("Approved wordmark and launcher artwork verified.");
+
+assert((await read("android/app/src/main/res/drawable/ultimate_launcher_padded.xml")).includes('android:inset="12%"'));assert((await read("android/app/src/main/res/drawable-v26/ultimate_launcher_padded.xml")).includes("<adaptive-icon"));assert((await read("android/app/src/main/res/drawable/ultimate_launcher_foreground.xml")).includes('android:inset="24%"'));

@@ -1,7 +1,15 @@
 # Secret discoveries and useful rewards — November 26, 2026
 Story mode, Xbox. Community discoveries included; no console-test requirement. Coordinates must come from the original map, not guessed positions.
 ## Pelican Valley research outpost — high priority
-Use a boat to the antenna-covered station in Gullet Marsh. Restore power at the outside breaker if required. Read the bedroom clue, use the computer password CLEAVES, complete the scripted encounter and read the crab experiment clipboard. Safe 0072 (reported $1,100); follow the dock to the boathouse and enter 0212. Collect Crabshack VF5 and reported $10,000 marked bills. Marked bills need the later fencing unlock, not immediately spendable cash. Use displayed Xbox prompts.
+**Reported rewards:** Crabshack VF5, $1,100 from safe, $10,000 in marked bills.
+1. Take a boat to the antenna-covered station in Gullet Marsh.
+2. Restore power at the outside breaker if required.
+3. Read the bedroom clue and enter CLEAVES on the computer.
+4. Complete the scripted encounter and read the crab experiment clipboard.
+5. Open safe 0072.
+6. Follow the dock to the boathouse and enter 0212.
+7. Collect the weapon and marked bills.
+**Important:** Marked bills need the later fencing unlock before becoming spendable cash.
 Sources: https://gta6.house/guides/gta-6-free-legendary-weapons-locations ; https://www.gta6heists.com/money/pelican-valley-outpost ; https://leonidawaypoint.com/guides/giant-crab-easter-egg
 Map reference: https://gta6map.city/secrets/giant-mutant-crab/
 ## Permanent bonuses worth doing early
