@@ -6,3 +6,6 @@ node_modules/
 data/catalog-snapshot.json
 data/catalog-import-report.json
 *.apk
+
+/app/guide-data-final.js
+/app/vehicle-data-final.js

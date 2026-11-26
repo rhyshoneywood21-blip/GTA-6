@@ -1,4 +1,4 @@
-name: Build Leonida Companion
+name: Build GTA 6 Ultimate Companion
 on:
   workflow_dispatch:
 permissions:
@@ -12,8 +12,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Fetch optional licensed catalogue
-        run: node scripts/fetch-catalog.mjs
       - name: Validate data and build assets
         run: |
           node scripts/check-data.mjs
@@ -48,5 +46,4 @@ jobs:
           name: Leonida-Companion-Web
           path: |
             dist/Leonida-Companion.html
-            data/catalog-import-report.json
           if-no-files-found: error
