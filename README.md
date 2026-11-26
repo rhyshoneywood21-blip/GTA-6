@@ -4,6 +4,13 @@ Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2
 
 This is a spoiler-light, living research reference for two players who want easier gameplay, high payouts, fast travel and collectibles. The repository is public: do not add personal account details or private screenshots.
 
+## Latest vehicle research — GTA Town export
+- [Unified 560-entry vehicle dataset](data/vehicles-unified.json)
+- [Original CC BY 4.0 export](data/gtatown-vehicles-2026-11-26.json)
+- [Unmatched prior records for alias review](data/vehicle-unmatched-review.json)
+- [Merge coverage and Timesaver source report](research/vehicle-export-merge.md)
+No app changes. 442 complete performance panels; 399 entries with seat information, 310 with location leads, 195 with screenshot references. Cargo, registration and exact spawn coverage remain incomplete.
+
 ## Current priority — complete research before app release
 No full story mission walkthroughs. Keep only relevant unlock requirements. APK/UI development paused; existing portable version is an earlier prototype.
 
