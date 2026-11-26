@@ -1,7 +1,7 @@
 # Randy's Wish List and RydeMe
 ## Unlock and track
-Chapter 3, Clonin' Keys, Makin' Gs. Map > Robberies > Randy's Wish List. The introductory Zorrusso counts in some guides. The in-game list is authoritative; published lists disagree (16–22 including later targets/finale). Do not treat the previous 17-car poster as exhaustive.
-## Partner delivery candidate (not locally verified)
+Chapter 3, Clonin' Keys, Makin' Gs. Map > Robberies > Randy's Wish List. The introductory Zorrusso counts in some guides. The in-game list is authoritative; published lists disagree (16–22 including later targets/finale).
+## Partner delivery steps
 1. Save separately; meet your partner.
 2. Scan a wanted car, order RydeMe to Randy first (Nov 25 guide sequence), then clone its key and have both characters enter.
 3. Select Wait In Car in the partner menu (hold D-pad Right; follow actual UI).
@@ -39,7 +39,7 @@ Peacock Estates: take RydeMe to gate, walk along residential streets, scan drive
 - https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations (WIP, 20)
 - https://gtatown.com/garage/randy-wish-list (22 incl. later additions)
 
-## November 26 cross-check
+## Delivery rewards and troubleshooting
 - November 25 published fast-travel guide supports Wait In > board taxi > Follow Me > Skip Journey. For normal taxi skip, hold LT then press Y when prompted; $100 extra. https://gta6.house/guides/gta-6-fast-travel-stolen-cars-rydeme ; https://www.gtabase.com/gta-6/articles/how-to-fast-travel-in-gta-6
 - No guarantee that the partner can start an inaccessible car or leave a gated estate. First test a car in an open driveway. RydeMe pickup is on a reachable road; destination is Randy's garage, not the stolen vehicle.
 - Advanced-tracker registration: finish Randy's required deliveries, progress Chapter 4 through Photo/Shoot and complete Dale Mamba (Mamba GT). Earlier 5–7-car claims are not reliable. https://www.vice.com/en/article/gta-6-advanced-tracker-removal/ ; https://www.powerpyx.com/gta-6-how-to-register-advanced-tracker-cars/
@@ -48,10 +48,10 @@ Peacock Estates: take RydeMe to gate, walk along residential streets, scan drive
 
 See [expanded checklist and correction](randy-full-checklist.md) for 16 initial cars, later objectives and disputed board entries.
 
-## November 26 targeted recheck
-The Nov 25 CutsceneWire step sequence supports requesting RydeMe to Randy before seating the partner. GTA6.house text also describes ordering before the Wait In step, despite a different summary ordering. Both may derive from Game Rant. The partner-driver alternative (follow in stolen car while active player drives normally) is also reported; test before using on a valuable target. $100 is the reported skip fee, not necessarily total ride cost. Keep the original vehicle list unchanged during the deferred vehicle phase.
+## Alternative partner method
+The Nov 25 CutsceneWire step sequence supports requesting RydeMe to Randy before seating the partner. GTA6.house text also describes ordering before the Wait In step, despite a different summary ordering. Both may derive from Game Rant. The partner-driver alternative (follow in stolen car while active player drives normally) is also reported; test before using on a valuable target. $100 is the reported skip fee, not necessarily total ride cost.
 Sources: https://cutscenewire.com/games/gta-6/vehicles/how-to-fast-travel-with-stolen-cars-without-damage-in-gta-6/ ; https://gta6.house/guides/gta-6-fast-travel-stolen-cars-rydeme ; https://www.vicevaulted.com/d/gta6-partner-driver-tracker-bypass-exploit
 No independently reproduced Xbox Series S test or guaranteed driveway solution.
 
-## New November 26 report
+## Reported delivery bonus
 VicePulse links a creator demonstration of RydeMe delivery and a reported $10,000 undamaged bonus. It explicitly labels the method unconfirmed. GTA6.house's updated RydeMe reference supports ordering the ride to Randy before Wait In. Follow actual prompts; $100 is the skip charge, not guaranteed total fare. No proof that every gated driveway works. https://vicepulse.org/t/gta6-randy-rydeme-car-delivery ; https://gta6.house/library/items/ryde-me
