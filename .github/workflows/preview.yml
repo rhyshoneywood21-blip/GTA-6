@@ -1,6 +1,17 @@
 name: Online companion preview (no APK)
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'app/**'
+      - 'guides/**'
+      - 'research/**'
+      - 'scripts/build-assets.mjs'
+      - 'scripts/prepare-final-guides.mjs'
+      - 'scripts/preview-audit.mjs'
+      - '.github/workflows/preview.yml'
 permissions:
   contents: read
   pages: write
@@ -11,7 +22,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 25
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -24,6 +35,12 @@ jobs:
         run: |
           node scripts/check-data.mjs
           node scripts/build-assets.mjs
+      - name: Install browser for preview checks
+        run: |
+          npm install --no-save playwright@1.51.1
+          npx playwright install --with-deps chromium
+      - name: Check companion before publishing
+        run: node scripts/browser-test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -31,3 +48,16 @@ jobs:
       - name: Publish preview
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Audit actual published companion
+        env:
+          PREVIEW_URL: ${{ steps.deployment.outputs.page_url }}
+        run: node scripts/preview-audit.mjs
+      - name: Upload visual audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-companion-audit
+          path: |
+            preview-audit/
+            qa-artifacts/
+          if-no-files-found: ignore
