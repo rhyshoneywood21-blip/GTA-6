@@ -1,0 +1,1196 @@
+{
+  "checked": "2026-11-26",
+  "scope": "Fictional GTA VI weapons only. Names/class facts cross-checked using Offmap Intel, source links retained. No guide prose or imagery copied. Candidates include edition items and disputed classifications; not a verified 66-item roster.",
+  "expected": {
+    "standard": 66,
+    "guns": 53,
+    "melee": 9,
+    "explosives": 4,
+    "variants": 130,
+    "total": 196,
+    "completionStandard": 50
+  },
+  "countSource": "https://www.powerpyx.com/gta-6-all-weapons/",
+  "rows": [
+    {
+      "name": "ADB PD-90",
+      "category": "Submachine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.dexerto.com/wikis/gta-6/weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Vom Feuer VF5",
+      "category": "Submachine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.dexerto.com/wikis/gta-6/weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Vom Feuer VF5C",
+      "category": "Submachine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Wortham WCR1",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Wortham W-22",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Scorpio Nipper .38",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [
+        {
+          "damage": 2.8,
+          "accuracy": 3,
+          "handling": 9,
+          "range": 3,
+          "magazine": 8,
+          "price": 550,
+          "source": "https://gta6viki.com/weapon-stats"
+        },
+        {
+          "damage": 2.8,
+          "accuracy": 3,
+          "handling": 9,
+          "range": 2.5,
+          "price": 550,
+          "source": "https://www.rosenberryrooms.com/all-weapon-stats-in-gta-6-explained/"
+        }
+      ],
+      "pickupIds": [
+        "weapon-spawn-031"
+      ]
+    },
+    {
+      "name": "Girardi ES9",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [
+        {
+          "damage": 4.2,
+          "accuracy": 5.2,
+          "range": 4.4,
+          "magazine": 15,
+          "price": 700,
+          "source": "https://www.gta6values.com/prices/weapons/"
+        }
+      ],
+      "pickupIds": []
+    },
+    {
+      "name": "Klose K17",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [
+        {
+          "damage": 4,
+          "accuracy": 4.2,
+          "handling": 8.5,
+          "range": 3.8,
+          "magazine": 17,
+          "price": 975,
+          "source": "https://gtaplaybook.com/gta6/guides/buying-weapons-and-ammo/"
+        },
+        {
+          "damage": 3.5,
+          "accuracy": 4.2,
+          "handling": 8,
+          "range": 3.4,
+          "price": 975,
+          "source": "https://www.rosenberryrooms.com/all-weapon-stats-in-gta-6-explained/"
+        }
+      ],
+      "pickupIds": []
+    },
+    {
+      "name": "Duke 1922",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Girardi ES18",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Klose K17 MCD",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Fairview Kalinga .50",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Duke Mustang .357",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Hawk & Little .38",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Hawk & Little Morgan",
+      "category": null,
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Scorpio Akulus",
+      "category": "Handguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [
+        {
+          "damage": 7,
+          "accuracy": 4.2,
+          "range": 6,
+          "magazine": 6,
+          "price": 3000,
+          "source": "https://www.gta6values.com/prices/weapons/"
+        }
+      ],
+      "pickupIds": []
+    },
+    {
+      "name": "Fortune & Son Gorse 425",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Fortune & Son Moreland 850",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Girardi AZ1200",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Girardi Super400",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Girardi Verro",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Goodwin Comshot 12",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Kozlov KVGA-12",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Mason & Keen Longshot",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Mason & Keen Shortstraw",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Shrewsbury Drifter",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Shrewsbury Hobo",
+      "category": "Shotguns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "BZI Vatra",
+      "category": "Submachine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Deever Tech DSG",
+      "category": "Submachine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Schlamm DW-9",
+      "category": "Submachine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Wortham W-10",
+      "category": "Submachine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Zhang Wu Type 9",
+      "category": "Submachine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Duke 556",
+      "category": "Assault rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [
+        {
+          "damage": 5,
+          "price": 1450,
+          "source": "https://www.gtabase.com/gta-6/weapons/"
+        }
+      ],
+      "pickupIds": []
+    },
+    {
+      "name": "Hillinger Heathen",
+      "category": "Assault rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Vom Feuer VF-G1",
+      "category": "Assault rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [
+        {
+          "price": 3700,
+          "source": "https://gta6viki.com/weapon-stats"
+        }
+      ],
+      "pickupIds": []
+    },
+    {
+      "name": "Kozlov KZ-59",
+      "category": "Assault rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [
+        {
+          "damage": 5.4,
+          "accuracy": 5.2,
+          "handling": 5.2,
+          "range": 6.5,
+          "magazine": 30,
+          "price": 1250,
+          "source": "https://gta6gang.com/wiki/weapons.html"
+        },
+        {
+          "damage": 5,
+          "accuracy": 5.5,
+          "handling": 5.8,
+          "range": 5.4,
+          "price": 1250,
+          "source": "https://www.rosenberryrooms.com/all-weapon-stats-in-gta-6-explained/"
+        }
+      ],
+      "pickupIds": []
+    },
+    {
+      "name": "Kozlov Hind",
+      "category": "Assault rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "ADB FRA",
+      "category": "Assault rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Hawk & Little Mediator",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Hillinger M306",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Hillinger M306 TMR",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": [
+        "weapon-spawn-108"
+      ]
+    },
+    {
+      "name": "Wortham W-14",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Fortune & Son Laird 350",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": [
+        "weapon-spawn-083",
+        "weapon-spawn-118"
+      ]
+    },
+    {
+      "name": "Shrewsbury SM-69",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Fairview FF-SR",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Fairview FF-50",
+      "category": "Sniper and tactical rifles",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "ADB M350",
+      "category": "Machine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": [
+        "weapon-spawn-128"
+      ]
+    },
+    {
+      "name": "Goodwin LMG 6",
+      "category": "Machine guns",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Deever Tech GLR40",
+      "category": "Launchers",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Hauners H-AT",
+      "category": null,
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://timesaver.gg/tools/gta-6/cheats/hauners-h-at"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": [
+        "weapon-spawn-095"
+      ]
+    },
+    {
+      "name": "Hillinger Boomer",
+      "category": "Launchers",
+      "kind": "gun candidate",
+      "evidence": "two-guide reported name (Offmap Intel); exact standard/edition status needs checking",
+      "sources": [
+        "https://www.dexerto.com/wikis/gta-6/weapons/",
+        "https://playday.one/2026/11/18/all-weapons-in-gta-6/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": [
+        "weapon-spawn-053"
+      ]
+    },
+    {
+      "name": "Baton",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [
+        {
+          "price": 160,
+          "source": "https://game-checklists.com/gta6/weapons-checklist/"
+        }
+      ],
+      "pickupIds": []
+    },
+    {
+      "name": "Brass Knuckles",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Bushcraft Knife",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Combat Knife",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Diving Knife",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "EDC Knife",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Hunting Knife",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Survival Knife",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Switchblade",
+      "category": "Melee",
+      "kind": "standard candidate",
+      "evidence": "listed by GTA6 Arena; some other guides count baseball bat instead of a listed item",
+      "sources": [
+        "https://gta6guide.help/e/weapons-vehicles--roster-melee-and-throwables",
+        "https://allthings.how/gta-6-how-many-weapons-guns-melee-explosives-variants/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Grenade",
+      "category": "Explosive candidate",
+      "kind": "classification needs verification",
+      "evidence": "candidate name, not counted toward a claimed full roster",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.powerpyx.com/gta-6-all-weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Sticky Bomb",
+      "category": "Explosive candidate",
+      "kind": "classification needs verification",
+      "evidence": "candidate name, not counted toward a claimed full roster",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.powerpyx.com/gta-6-all-weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Molotov",
+      "category": "Explosive candidate",
+      "kind": "classification needs verification",
+      "evidence": "candidate name, not counted toward a claimed full roster",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.powerpyx.com/gta-6-all-weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Pipe Bomb",
+      "category": "Explosive candidate",
+      "kind": "classification needs verification",
+      "evidence": "candidate name, not counted toward a claimed full roster",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.powerpyx.com/gta-6-all-weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Baseball Bat",
+      "category": "Melee / activity item",
+      "kind": "classification needs verification",
+      "evidence": "candidate name, not counted toward a claimed full roster",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.powerpyx.com/gta-6-all-weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": [
+        "weapon-spawn-027",
+        "weapon-spawn-086"
+      ]
+    },
+    {
+      "name": "Pool Cue",
+      "category": "Melee / activity item",
+      "kind": "classification needs verification",
+      "evidence": "candidate name, not counted toward a claimed full roster",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.powerpyx.com/gta-6-all-weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": []
+    },
+    {
+      "name": "Golf Club",
+      "category": "Melee / activity item",
+      "kind": "classification needs verification",
+      "evidence": "candidate name, not counted toward a claimed full roster",
+      "sources": [
+        "https://www.gtabase.com/gta-6/weapons/",
+        "https://www.powerpyx.com/gta-6-all-weapons/"
+      ],
+      "stats": null,
+      "price": null,
+      "magazine": null,
+      "unlock": null,
+      "statReports": [],
+      "pickupIds": [
+        "weapon-spawn-113"
+      ]
+    }
+  ]
+}
