@@ -1,0 +1,23 @@
+id,type,name,area,min_cash,max_cash
+1,small,Fleeca,Key Lento,5000,20000
+2,small,Shorefront,Watson Bay,5000,20000
+3,small,Gibson Brothers Bank,Mariana County,10000,30000
+4,small,Lombank,Peacock Bay,5000,20000
+5,small,Fleeca,Peacock Bay,5000,20000
+6,small,Shorefront,Downtown,5000,15000
+7,small,Shorefront,Rockridge,5000,20000
+8,small,Lombank,Bayside,15000,45000
+9,small,Fleeca,Washington Beach,10000,30000
+10,small,Lombank,Ocean Beach,15000,45000
+11,small,Fleeca,Ocean Beach,5000,15000
+12,small,Shorefront,Ocean Beach,5000,15000
+13,small,Druthers State Bank,Leonard County,15000,45000
+14,small,Shorefront,Ambrosia,5000,15000
+15,vault,Fleeca,VCIA,100000,150000
+16,vault,Fleeca,Tequesta,65000,110000
+17,vault,Lombank,Downtown,135000,205000
+18,vault,Fleeca,Downtown,100000,150000
+19,vault,Lombank,Ocean Beach (A),135000,205000
+20,vault,Fleeca,Ocean Beach,75000,135000
+21,vault,Lombank,Ocean Beach (B),75000,135000
+22,vault,Shorefront,Ocean Beach,95000,140000
