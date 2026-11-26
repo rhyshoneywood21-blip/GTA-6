@@ -22,6 +22,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Run mobile-browser tests
         run: node scripts/browser-test.mjs
+      - name: Verify live interactive map
+        run: node scripts/live-map-test.mjs
       - uses: actions/setup-java@v4
         with:
           distribution: temurin

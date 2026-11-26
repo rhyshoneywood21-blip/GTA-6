@@ -15,6 +15,8 @@ try{
  await f.locator(".leaflet-tile-loaded").first().waitFor({timeout:60000});
  report.checks.push("Original map and base tiles loaded inside companion");
  await page.screenshot({path:"qa-artifacts/live-vehicle-map.png"});
+ const tileUrls=()=>f.locator(".leaflet-tile-loaded").evaluateAll(tiles=>tiles.map(t=>t.getAttribute("src")).sort().join("|"));
+ const beforeZoom=await tileUrls();await f.locator(".leaflet-control-zoom-in").click();await page.waitForTimeout(1200);assert.notEqual(await tileUrls(),beforeZoom,"Provider zoom should request a different tile view");await f.locator(".leaflet-control-zoom-in").click();await page.waitForTimeout(1000);await page.screenshot({path:"qa-artifacts/live-map-zoomed.png"});report.checks.push("Original map zoom controls updated loaded tile view");
  const id=await page.evaluate(()=>LEONIDA_MAP.rows.find(r=>r[2]==="vehicle"&&r[0].startsWith("standout-vehicle-"))?.[0]);assert(id);
  await page.evaluate(id=>LeonidaMap.openId(id),id);
  await f.locator(".leaflet-popup .pop").waitFor({state:"visible",timeout:60000});
