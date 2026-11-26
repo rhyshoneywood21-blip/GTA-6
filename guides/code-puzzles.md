@@ -8,7 +8,7 @@ Codes are strings, retain zeros. Check the actual in-game clue; random safes are
 | Saber Shipping Yard | 8046 | Office map; reported $9,769 payout in one run | [Source](https://www.gta6heists.com/robberies/safe-codes) |
 | Saber Shipping Facility | 1122 / 1965 | Disputed; 1965 may belong to Casa Guardia, inspect local clue | [Source](https://alcasthq.com/gta-6-robberies/) |
 | Watson Bay Safehouse | 1819 | Kitchen computer email clue | [Source](https://gtafieldguide.com/guides/safe-codes/) |
-| Leonida Carrier Warehouse | 9256 | Back office; ordinary one-off safe, not excluded teddy-bear farm | [Source](https://gta6playertools.com/locations/safe-codes) |
+| Leonida Carrier Warehouse | 9256 | Back office; one-off safe | [Source](https://gta6playertools.com/locations/safe-codes) |
 | Pelican Valley computer | CLEAVES | Bedroom clue | [Source](https://www.gta6heists.com/money/pelican-valley-outpost) |
 | Pelican Valley safe | 0072 | Reported $1,100 | [Source](https://gta6.house/guides/gta-6-free-legendary-weapons-locations) |
 | Pelican Valley boathouse | 0212 | Crabshack VF5 and $10k marked bills | [Source](https://www.gta6heists.com/money/pelican-valley-outpost) |
