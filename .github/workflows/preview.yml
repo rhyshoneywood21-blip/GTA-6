@@ -21,6 +21,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     environment:
@@ -38,9 +39,21 @@ jobs:
       - name: Install browser for preview checks
         run: |
           npm install --no-save playwright@1.51.1
-          npx playwright install --with-deps chromium
+          npx playwright install chromium
+          if ! node --input-type=module -e 'import { chromium } from "playwright"; const b = await chromium.launch({headless:true}); await b.close();'; then
+            for source in /etc/apt/sources.list.d/microsoft-prod.list /etc/apt/sources.list.d/microsoft-prod.sources; do
+              if [ -f "$source" ] && grep -q 'packages.microsoft.com/ubuntu/' "$source"; then
+                sudo mv "$source" "$source.disabled"
+              fi
+            done
+            npx playwright install-deps chromium
+            node --input-type=module -e 'import { chromium } from "playwright"; const b = await chromium.launch({headless:true}); await b.close();'
+          fi
       - name: Check companion before publishing
-        run: node scripts/browser-test.mjs
+        run: |
+          node scripts/browser-test.mjs
+          node scripts/v230-browser-test.mjs
+          node scripts/live-map-test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

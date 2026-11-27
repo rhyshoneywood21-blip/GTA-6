@@ -1,0 +1,1 @@
+V2.3.0 integrated candidate: static checks and both offline browser suites passed. Real HTTP/browser storage and live map blocked by local environment; GitHub QA and phone validation required. Do not publish or build APK before QA. See research/v230/qa-stage6.md.

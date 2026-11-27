@@ -5,6 +5,7 @@ permissions:
   contents: read
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
@@ -34,7 +35,9 @@ jobs:
             node --input-type=module -e 'import { chromium } from "playwright"; const b = await chromium.launch({headless:true}); await b.close();'
           fi
       - name: Run mobile-browser tests
-        run: node scripts/browser-test.mjs
+        run: |
+          node scripts/browser-test.mjs
+          node scripts/v230-browser-test.mjs
       - name: Verify live interactive map
         run: node scripts/live-map-test.mjs
       - uses: actions/setup-java@v4

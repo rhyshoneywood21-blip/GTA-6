@@ -1,3 +1,9 @@
+# V2.3.0 integrated QA candidate
+
+Based on V2.2.0, not released. See [Stage 6 QA and release gate](research/v230/qa-stage6.md). Static checks and offline browser suites passed; live-provider and real-origin browser QA must pass on `v2.3.0-qa` before promotion.
+
+---
+
 # GTA VI | Xbox Series S gameplay handbook
 
 Research baseline: **26 November 2026**. Latest identified Xbox build: **1.0.2.2 (23 November)**. Story mode only.

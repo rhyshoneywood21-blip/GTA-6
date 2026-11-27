@@ -1,14 +1,16 @@
-name: Stage 5 browser QA (no APK)
+name: V2.3 browser QA (no APK)
 on:
   workflow_dispatch:
   push:
-    branches: [main, v2.2.0-qa]
+    branches: [main, v2.2.0-qa, v2.3.0-qa]
     paths:
       - '.github/workflows/stage5-qa.yml'
       - 'scripts/browser-test.mjs'
       - 'app/live-map.js'
       - 'index.html'
       - 'app/v220-*.js'
+      - 'app/v230-*.js'
+      - 'scripts/v230-browser-test.mjs'
 permissions:
   contents: read
 jobs:
@@ -28,9 +30,20 @@ jobs:
       - name: Install browser
         run: |
           npm install --no-save playwright@1.51.1
-          npx playwright install --with-deps chromium
+          npx playwright install chromium
+          if ! node --input-type=module -e 'import { chromium } from "playwright"; const b = await chromium.launch({headless:true}); await b.close();'; then
+            for source in /etc/apt/sources.list.d/microsoft-prod.list /etc/apt/sources.list.d/microsoft-prod.sources; do
+              if [ -f "$source" ] && grep -q 'packages.microsoft.com/ubuntu/' "$source"; then
+                sudo mv "$source" "$source.disabled"
+              fi
+            done
+            npx playwright install-deps chromium
+            node --input-type=module -e 'import { chromium } from "playwright"; const b = await chromium.launch({headless:true}); await b.close();'
+          fi
       - name: Browser QA
-        run: node scripts/browser-test.mjs
+        run: |
+          node scripts/browser-test.mjs
+          node scripts/v230-browser-test.mjs
       - name: Live source map integration QA
         run: node scripts/live-map-test.mjs
       - uses: actions/upload-artifact@v4

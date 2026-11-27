@@ -9,7 +9,9 @@ assert(v.rows.every(r=>Object.values(r.stats).every(x=>Number.isFinite(x)&&x>=0&
 assert.equal(v.rows.filter(r=>r.variant).length,281);
 const ctx=vm.createContext({window:{}});
 for(let i=1;i<=4;i++)vm.runInContext(await read("app/map-data-"+i+".js"),ctx);
+vm.runInContext(await read("app/v230-map.js"),ctx);
 const ids=new Set(ctx.window.LEONIDA_MAP.rows.map(r=>r[0]));
+assert.equal(ids.size,6788);
 for(const r of v.rows)for(const p of r.pins)assert(ids.has(p.id),"unmatched map ID "+p.id);
 for(const p of m.paths)assert((await read(p)).startsWith("# "),p);
 for(const arr of Object.values(m.pages))for(const x of arr)assert(m.paths.includes((x.includes("/")?x:"guides/"+x)+".md"));
